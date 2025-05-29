@@ -5,22 +5,49 @@
   <title>studio-finder</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
+        font-family: Arial, sans-serif;
+        margin: 2rem;
+        background-color: #f9f9f9;
+        color: #333;
     }
+
+    h1 {
+        font-size: 2rem;
+        color: #222;
+    }
+
     h2 {
-      margin-top: 2rem;
+        margin-top: 2rem;
+        color: #444;
     }
+
     ul {
-      list-style-type: none;
-      padding: 0;
+        list-style-type: none;
+        padding: 0;
     }
+
     li {
-      padding: 0.5rem 0;
-      border-bottom: 1px solid #ccc;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    a {
+        color: #0066cc;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+        color: #004a99;
+    }
+
+    strong {
+        color: #000;
     }
   </style>
 </head>
+
+
 <body>
   <h1>studio-finder</h1>
 
@@ -29,9 +56,6 @@
 
   <h2>international</h2>
   <ul id="international"></ul>
-
-
-
 
   <script>
     async function loadstudio(dateiname, listenId) {

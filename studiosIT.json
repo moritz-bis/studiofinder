@@ -4,7 +4,8 @@
     "website": "http://www.keijitakeuchi.com/",
     "country": "IT",
     "city": "Milano",
-    "tags": ["furniture", "interior", "product"]
+    "tags": ["furniture", "interior", "product"],
+    "issuer": "Moritz"
   },
   
   {
@@ -12,7 +13,8 @@
     "website": "https://www.kensakuoshiro.com/",
     "country": "IT",
     "city": "Milano",
-    "tags": ["furniture"]
+    "tags": ["furniture"],
+    "issuer": "Moritz"
   },
 
   {
@@ -20,7 +22,8 @@
     "website": "https://mariotrimarchi.design/",
     "country": "IT",
     "city": "Milano",
-    "tags": ["product", "branding", "art"]
+    "tags": ["product", "branding", "art"],
+    "issuer": "Moritz"
   },
 
   {
@@ -28,7 +31,8 @@
     "website": "https://www.bonagurogiorgio.com/",
     "country": "IT",
     "city": "Milano",
-    "tags": ["furniture", "interior"]
+    "tags": ["furniture", "interior"],
+    "issuer": "Moritz"
   },
 
   {
@@ -36,7 +40,8 @@
     "website": "https://www.habits.it/",
     "country": "IT",
     "city": "Milano",
-    "tags": ["furniture", "interior", "multi-location"]
+    "tags": ["furniture", "interior", "multi-location"],
+    "issuer": "Moritz"
   }
 
 ]
