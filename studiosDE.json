@@ -1,0 +1,57 @@
+[
+  {
+    "website": "https://bureauborsche.com",
+    "name": "Bureau Borsche",
+    "country": "DE",
+    "city": "Munich",
+    "tags": ["digital", "editorial", "graphic", "art-direction"],
+    "issuer": "Moritz"
+  },
+  
+  {
+    "website": "https://nicolastattmann.com",
+    "name": "Nicola Stattmann",
+    "country": "DE",
+    "city": "Frankfurt",
+    "tags": ["product", "furniture"],
+    "issuer": "Moritz"
+  },
+
+  {
+    "website": "https://www.duo-ade.com",    
+    "name": "Duo Ade",
+    "country": "DE",
+    "city": "Berlin",
+    "tags": ["graphic", "editorial"],
+    "issuer": "Moritz"
+  },
+
+  {
+    "website": "https://schumacher-design.de",
+    "name": "Schuhmacher",
+    "country": "DE",
+    "city": "Berlin",
+    "tags": ["branding", "interaction", "multi-location"],
+    "issuer": "Moritz"
+  },
+
+  {
+    "website": "https://schumacher-design.de",
+    "name": "Schuhmacher",
+    "country": "DE",
+    "city": "Darmstadt",
+    "tags": ["branding", "interaction", "multi-location"],
+    "issuer": "Moritz"
+  },  
+
+  {
+    "website": "https://theboysclub.berlin",
+    "name": "the boys club",
+    "country": "DE",
+    "city": "Berlin",
+    "tags": ["graphic", "illustration"],
+    "issuer": "Moritz"
+  }
+
+]
+
