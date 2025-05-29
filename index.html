@@ -30,6 +30,9 @@
   <h2>international</h2>
   <ul id="international"></ul>
 
+
+
+
   <script>
     async function loadstudio(dateiname, listenId) {
       try {
@@ -39,7 +42,7 @@
         const liste = document.getElementById(listenId);
         studios.forEach(studio => {
           const eintrag = document.createElement('li');
-          eintrag.textContent = `${studio.name} – ${studio.city}`; // oder passe an: `${studio.name} – ${studio.stadt}`
+          eintrag.textContent = `${studio.name} - ${studio.website} – ${studio.city}`; // oder passe an: `${studio.name} – ${studio.stadt}`
           liste.appendChild(eintrag);
         });
       } catch (error) {
@@ -51,5 +54,6 @@
     loadstudio('studiosIT.json', 'italy');
     loadstudio('studiosINT.json', 'international');
   </script>
+
 </body>
 </html>
