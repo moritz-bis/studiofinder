@@ -1,0 +1,43 @@
+[
+  {
+    "name": "Keiji Takeuchi",
+    "website": "http://www.keijitakeuchi.com/",
+    "country": "IT",
+    "city": "Milano",
+    "tags": ["furniture", "interior", "product"]
+  },
+  
+  {
+    "name": "Kensaku Oshiro",
+    "website": "https://www.kensakuoshiro.com/",
+    "country": "IT",
+    "city": "Milano",
+    "tags": ["furniture"]
+  },
+
+  {
+    "name": "Mario Trimarchi",
+    "website": "https://mariotrimarchi.design/",
+    "country": "IT",
+    "city": "Milano",
+    "tags": ["product", "branding", "art"]
+  },
+
+  {
+    "name": "Giorgio Bonaguro",
+    "website": "https://www.bonagurogiorgio.com/",
+    "country": "IT",
+    "city": "Milano",
+    "tags": ["furniture", "interior"]
+  },
+
+  {
+    "name": "Habits",
+    "website": "https://www.habits.it/",
+    "country": "IT",
+    "city": "Milano",
+    "tags": ["furniture", "interior", "multi-location"]
+  }
+
+]
+

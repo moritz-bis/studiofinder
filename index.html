@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>Studios Übersicht</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+    }
+    h2 {
+      margin-top: 2rem;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Studio Übersicht</h1>
+
+  <h2>studios italy</h2>
+  <ul id="italy"></ul>
+
+  <h2>studios international</h2>
+  <ul id="international"></ul>
+
+  <script>
+    async function loadstudio(dateiname, listenId) {
+      try {
+        const response = await fetch(dateiname);
+        const studios = await response.json();
+
+        const liste = document.getElementById(listenId);
+        studios.forEach(studio => {
+          const eintrag = document.createElement('li');
+          eintrag.textContent = studio.name; // oder passe an: `${studio.name} – ${studio.stadt}`
+          liste.appendChild(eintrag);
+        });
+      } catch (error) {
+        console.error(`Fehler beim Laden von ${dateiname}:`, error);
+      }
+    }
+
+    // JSON-Dateien laden
+    loadstudio('studiosIT.json', 'italy');
+    loadstudio('studiosINT.json', 'international');
+  </script>
+</body>
+</html>
