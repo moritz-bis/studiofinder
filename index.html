@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Studios Übersicht</title>
+  <title>studio-finder</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -22,12 +22,12 @@
   </style>
 </head>
 <body>
-  <h1>Studio Übersicht</h1>
+  <h1>studio-finder</h1>
 
-  <h2>studios italy</h2>
+  <h2>italy</h2>
   <ul id="italy"></ul>
 
-  <h2>studios international</h2>
+  <h2>international</h2>
   <ul id="international"></ul>
 
   <script>
@@ -39,7 +39,7 @@
         const liste = document.getElementById(listenId);
         studios.forEach(studio => {
           const eintrag = document.createElement('li');
-          eintrag.textContent = studio.name; // oder passe an: `${studio.name} – ${studio.stadt}`
+          eintrag.textContent = `${studio.name} – ${studio.stadt}`; // oder passe an: `${studio.name} – ${studio.stadt}`
           liste.appendChild(eintrag);
         });
       } catch (error) {
