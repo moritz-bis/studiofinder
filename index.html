@@ -42,7 +42,7 @@
         const liste = document.getElementById(listenId);
         studios.forEach(studio => {
           const eintrag = document.createElement('li');
-          eintrag.textContent = `${studio.name} - ${studio.website} – ${studio.city}`; // oder passe an: `${studio.name} – ${studio.stadt}`
+          eintrag.innerHTML = `${studio.name} – <a href="${studio.website}" target="_blank">${studio.website}</a> – ${studio.city}`;
           liste.appendChild(eintrag);
         });
       } catch (error) {
