@@ -13,10 +13,17 @@
   <h1>studio-finder</h1>
 
   <select id="countryFilter">
-    <option value="all">Alle Länder</option>
-    <option value="DE">Deutschland</option>
-    <option value="IT">Italien</option>
+    <option value="all">all countries</option>
+    <option value="DE">Germany</option>
+    <option value="IT">Italy</option>
     <option value="INT">International</option>
+  </select>
+
+  <select id="cityFilter">
+    <option value="all">Alle Städte</option>
+    <option value="Berlin">Berlin</option>
+    <option value="Munich">Munich</option>
+    <option value="Rome">Milan</option>
   </select>
 
   <h2>Alle Studios</h2>
@@ -81,13 +88,25 @@
   }
 
   // Filter
-  document.getElementById('countryFilter').addEventListener('change', (event) => {
-    const selected = event.target.value;
-    const filtered = selected === 'all'
-      ? alleStudios
-      : alleStudios.filter(s => s.country === selected);
-    zeigeStudios(filtered);
-  });
+  function applyFilter() {
+    const land = document.getElementById('countryFilter').value;
+    const stadt = document.getElementById('cityFilter').value;
+
+    let gefiltert = alleStudios;
+
+    if (land !== 'all') {
+      gefiltert = gefiltert.filter(s => s.country === land);
+    }
+
+    if (stadt !== 'all') {
+      gefiltert = gefiltert.filter(s => s.city === stadt);
+    }
+
+    zeigeStudios(gefiltert);
+  }
+
+  document.getElementById('countryFilter').addEventListener('change', applyFilter);
+  document.getElementById('cityFilter').addEventListener('change', applyFilter);
 
   // Start
   studiosTable();
