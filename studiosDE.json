@@ -2,7 +2,7 @@
   {
     "website": "https://bureauborsche.com",
     "name": "Bureau Borsche",
-    "country": "DE",
+    "country": "Germany",
     "city": "Munich",
     "tags": ["digital", "editorial", "graphic", "art-direction"],
     "author": "Moritz",
@@ -12,7 +12,7 @@
   {
     "website": "https://nicolastattmann.com",
     "name": "Nicola Stattmann",
-    "country": "DE",
+    "country": "Germany",
     "city": "Frankfurt",
     "tags": ["product", "furniture"],
     "author": "Moritz"
@@ -21,7 +21,7 @@
   {
     "website": "https://www.duo-ade.com",    
     "name": "Duo Ade",
-    "country": "DE",
+    "country": "Germany",
     "city": "Berlin",
     "tags": ["graphic", "editorial"],
     "author": "Moritz"
@@ -30,7 +30,7 @@
   {
     "website": "https://schumacher-design.de",
     "name": "Schuhmacher",
-    "country": "DE",
+    "country": "Germany",
     "city": "Berlin",
     "tags": ["branding", "interaction", "multi-location"],
     "author": "Moritz"
@@ -39,7 +39,7 @@
   {
     "website": "https://schumacher-design.de",
     "name": "Schuhmacher",
-    "country": "DE",
+    "country": "Germany",
     "city": "Darmstadt",
     "tags": ["branding", "interaction", "multi-location"],
     "author": "Moritz"
@@ -48,7 +48,7 @@
   {
     "website": "https://theboysclub.berlin",
     "name": "the boys club",
-    "country": "DE",
+    "country": "Germany",
     "city": "Berlin",
     "tags": ["graphic", "illustration"],
     "author": "Moritz"
