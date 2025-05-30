@@ -118,7 +118,7 @@
         <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
         <td>${studio.city.join(', ')}</td>
         <td>${studio.country.join(', ')}</td>
-        <td>${studio.tags.join(', ')}</td>
+        <td>${studio.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}</td>
       `;
       tbody.appendChild(row);
     });
