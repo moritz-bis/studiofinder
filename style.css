@@ -43,7 +43,8 @@ th, td {
 }
 
 th {
-  color: #277a46;
+  color: #333;
+  text-decoration: underline;
 }
 
 a {
