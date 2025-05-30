@@ -12,7 +12,21 @@
 <body>
 <h1>studio-finder</h1>
 
-  <h2>germany</h2>
+  <h2>Alle Studios</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Website</th>
+        <th>Stadt</th>
+        <th>Tags</th>
+        <th>Land</th> <!-- NEU -->
+      </tr>
+    </thead>
+    <tbody id="all-studios"></tbody>
+  </table>
+
+  <!-- <h2>germany</h2>
   <table>
     <thead>
       <tr>
@@ -49,9 +63,9 @@
       </tr>
     </thead>
     <tbody id="international"></tbody>
-  </table>
+  </table> -->
 
-  <script>
+  <!-- <script>
     async function loadstudio(dateiname, listenId) {
       try {
         const response = await fetch(dateiname);
@@ -79,6 +93,48 @@
     loadstudio('studiosDE.json', 'germany');
     loadstudio('studiosIT.json', 'italy');
     loadstudio('studiosINT.json', 'international');
-  </script>
+  </script> -->
+
+  <script>
+  async function loadAllStudios() {
+    const dateien = [
+      'studiosDE.json',
+      'studiosIT.json',
+      'studiosINT.json'
+    ];
+
+    const alleStudios = [];
+
+    for (const dateiname of dateien) {
+      try {
+        const response = await fetch(dateiname);
+        const studios = await response.json();
+        alleStudios.push(...studios);
+      } catch (error) {
+        console.error(`Fehler beim Laden von ${dateiname}:`, error);
+      }
+    }
+
+    // Sortieren nach Name
+    alleStudios.sort((a, b) => a.name.localeCompare(b.name));
+
+    // In eine Tabelle schreiben
+    const tbody = document.getElementById('all-studios');
+    alleStudios.forEach(studio => {
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td><strong>${studio.name}</strong></td>
+        <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
+        <td>${studio.city}</td>
+        <td>${studio.tags.join(', ')}</td>
+        <td>${studio.country}</td>
+      `;
+      tbody.appendChild(row);
+    });
+  }
+
+  loadAllStudios();
+</script>
+
 </body>
 </html>
