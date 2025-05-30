@@ -14,7 +14,9 @@
     
 body {
   font-family: 'Oxygen Mono', monospace;
-  margin: 4rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  margin-top: 2rem;
   background-color: #f9f9f9;
   color: #333;
   align-items: center;
