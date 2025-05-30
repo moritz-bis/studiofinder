@@ -127,29 +127,29 @@
   },
 
   {
-    "website": "https://laeuferkeichel.de",
-    "name": "Läufer und Keichel",
+    "website": "https://ertlundzull.de",
+    "name": "Ertl und Zull",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["sustainable", "furniture", "product"],
+    "tags": ["interior", "furniture", "product"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://laeuferkeichel.de",
-    "name": "Läufer und Keichel",
+    "website": "https://konstantin-grcic.com",
+    "name": "Konstantin Grcic",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["sustainable", "furniture", "product"],
+    "tags": ["furniture", "product", "exhibiton"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://laeuferkeichel.de",
-    "name": "Läufer und Keichel",
+    "website": "https://rojahn-design.com",
+    "name": "Rojahn Design",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["sustainable", "furniture", "product"],
+    "tags": ["product", "industry"],
     "author": "Moritz"
   }
 
