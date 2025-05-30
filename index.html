@@ -30,7 +30,7 @@
         const liste = document.getElementById(listenId);
         studios.forEach(studio => {
           const eintrag = document.createElement('li');
-          eintrag.innerHTML = `${studio.name} – <a href="${studio.website}" target="_blank">${studio.website}</a> – ${studio.city}`;
+          eintrag.innerHTML = `${studio.name} – <a href="${studio.website}" target="_blank">${studio.website}</a> – ${studio.city} - ${studio.tags.join(', ')}`;
           liste.appendChild(eintrag);
         });
       } catch (error) {
