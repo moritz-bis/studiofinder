@@ -47,7 +47,7 @@
 
   {
     "website": "https://www.markgraph.de",
-    "name": "Markgraph",
+    "name": "Atelier Markgraph",
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["exhibition"],
@@ -159,6 +159,159 @@
     "country": ["Germany", "Italy", "Portugal", "Japan"],
     "city": ["Hamburg", "Frankfurt", "Düsseldorf", "Munich", "Milan", "Lissabon", "Tokyo"],
     "tags": ["branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.mehnertdesign.de",
+    "name": "Mehnert Design",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["product", "interior", "branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://zielform-london.berlin",
+    "name": "Zielform London Berlin",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://make.studio",
+    "name": "Make Studio",
+    "country": ["Germany"],
+    "city": ["Hamburg"],
+    "tags": ["branding", "UX/UI"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://studioveh.com",
+    "name": "Studio Veh",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://herburg-weiland.de/de",
+    "name": "Herburg Weiland",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.aroma-id.de",
+    "name": "aroma:id",
+    "country": ["Germany"],
+    "city": ["Offenbach"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://cnp.studio",
+    "name": "Studio CNP",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["editorial", "art", "art direction", "UX/UI"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.weissraum.de",
+    "name": "Weissraum Design",
+    "country": ["Germany"],
+    "city": ["Hamburg"],
+    "tags": ["branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.pong.design/en/",
+    "name": "PONG",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.invivodesign.de",
+    "name": "Invivo",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.bureau-n.de",
+    "name": "Bureau N",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["consulting"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://oha.international",
+    "name": "Office Heinzelmann Ayadi",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["product", "furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.eckstein-design.com",
+    "name": "Eckstein Design",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["branding", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://whitelime.de",
+    "name": "White Lime",
+    "country": ["Germany"],
+    "city": ["Frankfurt", "Cologne", "Goettingen"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://y-u-k-i-k-o.com",
+    "name": "Studio Yukiko",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["branding", "art-direction", "graphic"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.y-si.studio/de",
+    "name": "Studio Y-si",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["UX/UI", "sustainable"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://omc-c.com",
+    "name": "OMC C",
+    "country": ["Germany"],
+    "city": ["Frankfurt"],
+    "tags": ["product", "sustainable"],
     "author": "Moritz"
   }
 
