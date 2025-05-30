@@ -64,29 +64,29 @@
   },
 
   {
-    "website": "https://natalia-echeverri.com",
-    "name": "Natalia ",
+    "website": "https://www.konradlohoefener.de",
+    "name": "Konrad Lohöfener",
     "country": ["Germany"],
-    "city": ["Laufen"],
-    "tags": ["graphic", "illustration"],
+    "city": ["Munich"],
+    "tags": ["product", "furniture"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://theboysclub.berlin",
-    "name": "the boys club",
+    "website": "https://deutscheundjapaner.com",
+    "name": "Deutsche und Japaner",
     "country": ["Germany"],
-    "city": ["Berlin"],
-    "tags": ["graphic", "illustration"],
+    "city": ["Berlin", "Mannheim"],
+    "tags": ["branding", "graphic", "art direction"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://theboysclub.berlin",
-    "name": "the boys club",
+    "website": "https://laeuferkeichel.de",
+    "name": "Läufer und Keichel",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["graphic", "illustration"],
+    "tags": ["sustainable", "furniture", "product"],
     "author": "Moritz"
   }
 
