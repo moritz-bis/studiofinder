@@ -12,7 +12,19 @@
 <body>
 <h1>studio-finder</h1>
 
-  <h2>Italien</h2>
+  <h2>germany</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Website</th>
+        <th>Stadt</th>
+      </tr>
+    </thead>
+    <tbody id="germany"></tbody>
+  </table>
+
+  <h2>italy</h2>
   <table>
     <thead>
       <tr>
@@ -24,7 +36,7 @@
     <tbody id="italy"></tbody>
   </table>
 
-  <h2>International</h2>
+  <h2>international</h2>
   <table>
     <thead>
       <tr>
@@ -60,6 +72,7 @@
       }
     }
 
+    loadstudio('studiosDE.json', 'germany');
     loadstudio('studiosIT.json', 'italy');
     loadstudio('studiosINT.json', 'international');
   </script>
