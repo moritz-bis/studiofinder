@@ -1,35 +1,55 @@
     
+
+@font-face {
+  font-family: 'Other Hand';
+  src: url('./fonts/OtherHand-Medium.otf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Oxygen Mono';
+  src: url('./fonts/OxygenMono-Regular.ttf');
+  font-weight: 400;
+}
     
-    body {
-      font-family: Arial, sans-serif;
-      margin: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-      align-items: center;
-    }
+body {
+  font-family: 'Oxygen Mono', monospace;
+  margin: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  align-items: center;
+}
 
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 2rem;
-      margin-bottom: 2rem;
-    }
+h1 {
+  font-family: 'Other Hand', sans-serif;
+  margin: 2rem;
+  background-color: #f9f9f9;
+  color: #333;
+  align-items: center;
+}
 
-    th, td {
-      /* border: 1px solid #ccc; */
-      padding: 0.5rem;
-      text-align: center;
-    }
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
 
-    th {
-      color: #277a46;
-    }
+th, td {
+  /* border: 1px solid #ccc; */
+  padding: 0.5rem;
+  text-align: center;
+}
 
-    a {
-      color: #45c473;
-      text-decoration: none;
-    }
+th {
+  color: #277a46;
+}
 
-    a:hover {
-      text-decoration: underline;
-    }
+a {
+  color: #45c473;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
