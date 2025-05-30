@@ -22,7 +22,7 @@ body {
 
 h1 {
   font-family: 'Other Hand', sans-serif;
-  margin: 4rem;
+  margin: 2%;
   font-size: 4rem;
   background-color: #f9f9f9;
   color: #333;
@@ -58,9 +58,9 @@ a:hover {
 .tag {
     background-color: #45c473;
     color: white;
-    padding: 2px 6px;
+    /* padding: 2px 6px;
     margin: 2px;
     border-radius: 4px;
     font-size: 0.85em;
-    display: inline-block;
+    display: inline-block; */
   }

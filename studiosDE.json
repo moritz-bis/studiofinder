@@ -43,6 +43,51 @@
     "city": ["Berlin"],
     "tags": ["graphic", "illustration"],
     "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.markgraph.de",
+    "name": "Markgraph",
+    "country": ["Germany"],
+    "city": ["Frankfurt"],
+    "tags": ["exhibition"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.kailinke.com",
+    "name": "Kai Linke",
+    "country": ["Germany"],
+    "city": ["Frankfurt"],
+    "tags": ["product", "exhibition", "furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://natalia-echeverri.com",
+    "name": "Natalia ",
+    "country": ["Germany"],
+    "city": ["Laufen"],
+    "tags": ["graphic", "illustration"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://theboysclub.berlin",
+    "name": "the boys club",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["graphic", "illustration"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://theboysclub.berlin",
+    "name": "the boys club",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["graphic", "illustration"],
+    "author": "Moritz"
   }
 
 ]
