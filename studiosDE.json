@@ -157,7 +157,7 @@
     "website": "https://www.peter-schmidt-group.de/index.php/en/home",
     "name": "Peter Schmidt Group",
     "country": ["Germany", "Italy", "Portugal", "Japan"],
-    "city": ["Hamburg", "Frankfurt", "Düsseldorf", "Munich", "Milan", "Lissabon", "Tokyo"],
+    "city": ["Hamburg", "Frankfurt", "Düsseldorf", "Munich", "Milan", "Lisbon", "Tokyo"],
     "tags": ["branding"],
     "author": "Moritz"
   },
@@ -312,6 +312,150 @@
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["product", "sustainable"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://andless.studio",
+    "name": "andless",
+    "country": ["Germany"],
+    "city": ["Frankfurt"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.markbraun.org/start/",
+    "name": "Studio Mark Braun",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["product", "furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://neomind.eu",
+    "name": "Neomind",
+    "country": ["Germany", "USA"],
+    "city": ["Munich", "Frankfurt", "San Francisco"],
+    "tags": ["transportation", "product", "branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.onogrit.com",
+    "name": "Onogrit Studio",
+    "country": ["Germany"],
+    "city": ["Cologne"],
+    "tags": ["branding", "UX/UI", "editorial"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.np-id.com",
+    "name": "N+P",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["transportation", "industry", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://3deluxe.de/de",
+    "name": "3deluxe",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["branding", "interior", "architecture"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.morroni.lu",
+    "name": "Morroni",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://newstandard.studio",
+    "name": "new standard.s",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["branding", "consulting", "sustainable"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://raumlabor.net",
+    "name": "Raumlabor",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["exhibition", "architecture", "sustainable"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://mykilos.com",
+    "name": "Mykilos",
+    "country": ["Germany"],
+    "city": ["Berlin", "Hamburg"],
+    "tags": ["interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://raumlichtlabor.de/index.html",
+    "name": "Raumlichtlabor",
+    "country": ["Germany"],
+    "city": ["Potsdam"],
+    "tags": ["exhibition", "interior", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://oh-studio.de",
+    "name": "OH Studio",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["art", "exhibition", "sustainable"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.pilotfish.eu",
+    "name": "Pilotfish",
+    "country": ["Germany", "Portugal", "Netherlands", "Taiwan"],
+    "city": ["Berlin", "Lisbon", "Amsterdam", "Teipei"],
+    "tags": ["product", "industry", "UX/UI"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://buero-staubach.de",
+    "name": "Buero Staubach",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["transportation", "industry"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.werteloberfell.com",
+    "name": "WertelOberfell",
+    "country": ["Germany"],
+    "city": ["Munich"],
+    "tags": ["product", "furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.yrd.works",
+    "name": "YRD.Works",
+    "country": ["Germany"],
+    "city": ["Offenbach"],
+    "tags": ["public", "art"],
     "author": "Moritz"
   }
 
