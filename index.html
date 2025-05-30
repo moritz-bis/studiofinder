@@ -43,7 +43,7 @@
 
   
 <script>
-  let alleStudios = []; // global, damit Filter Zugriff hat
+  let alleStudios = [];
 
   async function studiosTable() {
     const dateien = [
@@ -58,21 +58,50 @@
       try {
         const response = await fetch(dateiname);
         const daten = await response.json();
-        alle.push(...daten); // korrekt: daten in alle pushen
+        alle.push(...daten);
       } catch (error) {
         console.error(`Fehler beim Laden von ${dateiname}:`, error);
       }
     }
 
-    alleStudios = alle; // global verfügbar machen
-    zeigeStudios(alleStudios); // initial anzeigen
+    alleStudios = alle;
+
+    baueFilterOptionen(alleStudios); // dynamische Filter erstellen
+    zeigeStudios(alleStudios);      // initiale Anzeige
+  }
+
+  function baueFilterOptionen(studios) {
+    const countrySet = new Set();
+    const citySet = new Set();
+
+    studios.forEach(studio => {
+      if (studio.country) countrySet.add(studio.country);
+      if (studio.city) citySet.add(studio.city);
+    });
+
+    const countrySelect = document.getElementById('countryFilter');
+    const citySelect = document.getElementById('cityFilter');
+
+    // Hilfsfunktion zum Hinzufügen von Optionen
+    function addOptions(selectElement, values) {
+      selectElement.innerHTML = '<option value="all">Alle</option>';
+      [...values].sort().forEach(value => {
+        const option = document.createElement('option');
+        option.value = value;
+        option.textContent = value;
+        selectElement.appendChild(option);
+      });
+    }
+
+    addOptions(countrySelect, countrySet);
+    addOptions(citySelect, citySet);
   }
 
   function zeigeStudios(studios) {
     const tbody = document.getElementById('all-studios');
-    tbody.innerHTML = ''; // vorherige Einträge löschen
+    tbody.innerHTML = '';
 
-    studios.sort((a, b) => a.name.localeCompare(b.name)); // alphabetisch
+    studios.sort((a, b) => a.name.localeCompare(b.name));
 
     studios.forEach(studio => {
       const row = document.createElement('tr');
@@ -87,7 +116,6 @@
     });
   }
 
-  // Filter
   function applyFilter() {
     const land = document.getElementById('countryFilter').value;
     const stadt = document.getElementById('cityFilter').value;
@@ -108,8 +136,7 @@
   document.getElementById('countryFilter').addEventListener('change', applyFilter);
   document.getElementById('cityFilter').addEventListener('change', applyFilter);
 
-  // Start
-  studiosTable();
+  studiosTable(); // Start
 </script>
 
 </body>
