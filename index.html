@@ -19,6 +19,7 @@
         <th>Name</th>
         <th>Website</th>
         <th>Stadt</th>
+        <th>Tags</th>
       </tr>
     </thead>
     <tbody id="germany"></tbody>
@@ -31,6 +32,7 @@
         <th>Name</th>
         <th>Website</th>
         <th>Stadt</th>
+        <th>Tags</th>
       </tr>
     </thead>
     <tbody id="italy"></tbody>
@@ -43,6 +45,7 @@
         <th>Name</th>
         <th>Website</th>
         <th>Stadt</th>
+        <th>Tags</th>
       </tr>
     </thead>
     <tbody id="international"></tbody>
@@ -64,6 +67,7 @@
             <td><strong>${studio.name}</strong></td>
             <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
             <td>${studio.city}</td>
+            <td>${studio.tags.join(', ')}</td>
           `;
           tbody.appendChild(row);
         });
