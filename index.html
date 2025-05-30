@@ -10,16 +10,31 @@
 
 
 <body>
-  <h1>studio-finder</h1>
+<h1>studio-finder</h1>
 
-  <h2>germany</h2>
-  <ul id="germany"></ul>
+  <h2>Italien</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Website</th>
+        <th>Stadt</th>
+      </tr>
+    </thead>
+    <tbody id="italy"></tbody>
+  </table>
 
-  <h2>italy</h2>
-  <ul id="italy"></ul>
-
-  <h2>international</h2>
-  <ul id="international"></ul>
+  <h2>International</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Website</th>
+        <th>Stadt</th>
+      </tr>
+    </thead>
+    <tbody id="international"></tbody>
+  </table>
 
   <script>
     async function loadstudio(dateiname, listenId) {
@@ -27,25 +42,26 @@
         const response = await fetch(dateiname);
         const studios = await response.json();
 
-        const liste = document.getElementById(listenId);
+        // Alphabetisch sortieren
+        studios.sort((a, b) => a.name.localeCompare(b.name));
+
+        const tbody = document.getElementById(listenId);
         studios.forEach(studio => {
-          const eintrag = document.createElement('li');
-          eintrag.innerHTML = `${studio.name} – <a href="${studio.website}" target="_blank">${studio.website}</a> – ${studio.city} - ${studio.tags.join(', ')}`;
-          liste.appendChild(eintrag);
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td><strong>${studio.name}</strong></td>
+            <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
+            <td>${studio.city}</td>
+          `;
+          tbody.appendChild(row);
         });
       } catch (error) {
         console.error(`Fehler beim Laden von ${dateiname}:`, error);
       }
     }
 
-    // JSON-Dateien laden
-    loadstudio('studiosDE.json', 'germany');
     loadstudio('studiosIT.json', 'italy');
     loadstudio('studiosINT.json', 'international');
   </script>
-
-  <script data-goatcounter="https://studio-finder.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
-
 </body>
 </html>
