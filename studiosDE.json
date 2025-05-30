@@ -151,6 +151,15 @@
     "city": ["Berlin"],
     "tags": ["product", "industry"],
     "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.peter-schmidt-group.de/index.php/en/home",
+    "name": "Peter Schmidt Group",
+    "country": ["Germany", "Italy", "Portugal", "Japan"],
+    "city": ["Hamburg", "Frankfurt", "Düsseldorf", "Munich", "Milan", "Lissabon", "Tokyo"],
+    "tags": ["branding"],
+    "author": "Moritz"
   }
 
 ]
