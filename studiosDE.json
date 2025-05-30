@@ -5,7 +5,8 @@
     "country": "DE",
     "city": "Munich",
     "tags": ["digital", "editorial", "graphic", "art-direction"],
-    "issuer": "Moritz"
+    "author": "Moritz",
+    "favorite": "Domenico"
   },
   
   {
@@ -14,7 +15,7 @@
     "country": "DE",
     "city": "Frankfurt",
     "tags": ["product", "furniture"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
 
   {
@@ -23,7 +24,7 @@
     "country": "DE",
     "city": "Berlin",
     "tags": ["graphic", "editorial"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
 
   {
@@ -32,7 +33,7 @@
     "country": "DE",
     "city": "Berlin",
     "tags": ["branding", "interaction", "multi-location"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
 
   {
@@ -41,7 +42,7 @@
     "country": "DE",
     "city": "Darmstadt",
     "tags": ["branding", "interaction", "multi-location"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },  
 
   {
@@ -50,7 +51,7 @@
     "country": "DE",
     "city": "Berlin",
     "tags": ["graphic", "illustration"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   }
 
 ]

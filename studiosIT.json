@@ -5,7 +5,7 @@
     "country": "IT",
     "city": "Milano",
     "tags": ["furniture", "interior", "product"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
   
   {
@@ -14,7 +14,7 @@
     "country": "IT",
     "city": "Milano",
     "tags": ["furniture"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
 
   {
@@ -23,7 +23,7 @@
     "country": "IT",
     "city": "Milano",
     "tags": ["product", "branding", "art"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
 
   {
@@ -32,7 +32,7 @@
     "country": "IT",
     "city": "Milano",
     "tags": ["furniture", "interior"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   },
 
   {
@@ -41,7 +41,7 @@
     "country": "IT",
     "city": "Milano",
     "tags": ["furniture", "interior", "multi-location"],
-    "issuer": "Moritz"
+    "author": "Moritz"
   }
 
 ]
