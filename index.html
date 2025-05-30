@@ -10,23 +10,19 @@
 
 
 <body>
+  
   <h1>studio-finder</h1>
 
+  <label for="countryFilter">Land:</label>
   <select id="countryFilter">
-    <!-- <option value="all">all countries</option>
-    <option value="DE">Germany</option>
-    <option value="IT">Italy</option>
-    <option value="INT">International</option> -->
+    <option value="all">Alle Länder</option>
   </select>
 
+  <label for="cityFilter">Stadt:</label>
   <select id="cityFilter">
-    <!-- <option value="all">Alle Städte</option>
-    <option value="Berlin">Berlin</option>
-    <option value="Munich">Munich</option>
-    <option value="Rome">Milan</option> -->
+    <option value="all">Alle Städte</option>
   </select>
 
-  <!-- <h2>Alle Studios</h2> -->
   <table>
     <thead>
       <tr>
@@ -37,106 +33,103 @@
         <th>Land</th>
       </tr>
     </thead>
-    <tbody id="all-studios"></tbody>
+    <tbody id="studioTableBody"></tbody>
   </table>
 
 
   
 <script>
-  let alleStudios = [];
+  // Globale Variable zum Speichern der kombinierten Studios
+  let studios = [];
 
-  async function studiosTable() {
-    const dateien = [
-      'studiosDE.json',
-      'studiosIT.json',
-      'studiosINT.json'
-    ];
+  // DOM-Elemente
+  const tbody = document.getElementById("studioTableBody");
+  const countryFilter = document.getElementById("countryFilter");
+  const cityFilter = document.getElementById("cityFilter");
 
-    const alle = [];
+  // Studiendaten aus beiden JSON-Dateien laden
+  async function loadStudios() {
+    try {
+      const [deResponse, itResponse] = await Promise.all([
+        fetch('studiosDE.json'),
+        fetch('studiosIT.json')
+      ]);
 
-    for (const dateiname of dateien) {
-      try {
-        const response = await fetch(dateiname);
-        const daten = await response.json();
-        alle.push(...daten);
-      } catch (error) {
-        console.error(`Fehler beim Laden von ${dateiname}:`, error);
-      }
+      const [studiosDE, studiosIT] = await Promise.all([
+        deResponse.json(),
+        itResponse.json()
+      ]);
+
+      // Kombinieren der beiden Arrays
+      studios = [...studiosDE, ...studiosIT];
+
+      // Initialisierung von Dropdowns und Tabelle
+      initDropdowns(studios);
+      renderStudios();
+    } catch (error) {
+      console.error("Fehler beim Laden der Studiendaten:", error);
     }
-
-    alleStudios = alle;
-
-    baueFilterOptionen(alleStudios); // dynamische Filter erstellen
-    zeigeStudios(alleStudios);      // initiale Anzeige
   }
 
-  function baueFilterOptionen(studios) {
-    const countrySet = new Set();
-    const citySet = new Set();
+  // Einmalig Dropdowns mit eindeutigen Werten befüllen
+  function initDropdowns(studios) {
+    const allCountries = new Set();
+    const allCities = new Set();
 
     studios.forEach(studio => {
-      if (studio.country) countrySet.add(studio.country);
-      if (studio.city) citySet.add(studio.city);
+      studio.country.forEach(c => allCountries.add(c));
+      studio.city.forEach(c => allCities.add(c));
     });
 
-    const countrySelect = document.getElementById('countryFilter');
-    const citySelect = document.getElementById('cityFilter');
-
-    // Hilfsfunktion zum Hinzufügen von Optionen
-    function addOptions(selectElement, values) {
-      selectElement.innerHTML = '<option value="all">Alle</option>';
-      [...values].sort().forEach(value => {
-        const option = document.createElement('option');
-        option.value = value;
-        option.textContent = value;
-        selectElement.appendChild(option);
-      });
+    for (const country of Array.from(allCountries).sort()) {
+      const opt = document.createElement("option");
+      opt.value = country;
+      opt.textContent = country;
+      countryFilter.appendChild(opt);
     }
 
-    addOptions(countrySelect, countrySet);
-    addOptions(citySelect, citySet);
+    for (const city of Array.from(allCities).sort()) {
+      const opt = document.createElement("option");
+      opt.value = city;
+      opt.textContent = city;
+      cityFilter.appendChild(opt);
+    }
   }
 
-  function zeigeStudios(studios) {
-    const tbody = document.getElementById('all-studios');
-    tbody.innerHTML = '';
+  // Studios nach Filter anzeigen
+  function renderStudios() {
+    const selectedCountry = countryFilter.value;
+    const selectedCity = cityFilter.value;
 
-    studios.sort((a, b) => a.name.localeCompare(b.name));
+    const filtered = studios.filter(studio => {
+      const countryMatch = selectedCountry === "all" || studio.country.includes(selectedCountry);
+      const cityMatch = selectedCity === "all" || studio.city.includes(selectedCity);
+      return countryMatch && cityMatch;
+    });
 
-    studios.forEach(studio => {
-      const row = document.createElement('tr');
+    // Tabelle leeren
+    tbody.innerHTML = "";
+
+    // Studios eintragen
+    filtered.forEach(studio => {
+      const row = document.createElement("tr");
       row.innerHTML = `
         <td>${studio.name}</td>
         <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
-        <td>${studio.city}</td>
+        <td>${studio.city.join(', ')}</td>
+        <td>${studio.country.join(', ')}</td>
         <td>${studio.tags.join(', ')}</td>
-        <td>${studio.country}</td>
       `;
       tbody.appendChild(row);
     });
   }
 
-  function applyFilter() {
-    const land = document.getElementById('countryFilter').value;
-    const stadt = document.getElementById('cityFilter').value;
+  // Filter-Events
+  countryFilter.addEventListener("change", renderStudios);
+  cityFilter.addEventListener("change", renderStudios);
 
-    let gefiltert = alleStudios;
-
-    if (land !== 'all') {
-      gefiltert = gefiltert.filter(s => s.country === land);
-    }
-
-    if (stadt !== 'all') {
-      gefiltert = gefiltert.filter(s => s.city === stadt);
-    }
-
-    zeigeStudios(gefiltert);
-  }
-
-  document.getElementById('countryFilter').addEventListener('change', applyFilter);
-  document.getElementById('cityFilter').addEventListener('change', applyFilter);
-
-  studiosTable(); // Start
+  // Daten laden und starten
+  loadStudios();
 </script>
 
 </body>
