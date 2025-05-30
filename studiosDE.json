@@ -32,7 +32,7 @@
     "name": "Schuhmacher",
     "country": ["Germany"],
     "city": ["Berlin", "Darmstadt"],
-    "tags": ["branding", "interaction", "multi-location"],
+    "tags": ["branding", "interaction"],
     "author": "Moritz"
   },
 
@@ -78,6 +78,69 @@
     "country": ["Germany"],
     "city": ["Berlin", "Mannheim"],
     "tags": ["branding", "graphic", "art direction"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://laeuferkeichel.de",
+    "name": "Läufer und Keichel",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["sustainable", "furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://artcom.de",
+    "name": "Art + Com",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["art", "communication", "research"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://aisslinger.de",
+    "name": "Studio Aisslinger",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["interior", "furniture", "branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.thedarkhorse.de",
+    "name": "Dark Horse",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["consulting"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://www.strichpunkt-design.de",
+    "name": "Strichpunkt",
+    "country": ["Germany"],
+    "city": ["Berlin", "Stuttgart", "Hamburg"],
+    "tags": ["branding", "editorial", "graphic"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://laeuferkeichel.de",
+    "name": "Läufer und Keichel",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["sustainable", "furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "website": "https://laeuferkeichel.de",
+    "name": "Läufer und Keichel",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["sustainable", "furniture", "product"],
     "author": "Moritz"
   },
 
