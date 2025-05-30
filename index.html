@@ -10,7 +10,7 @@
 
 
 <body>
-<h1>studio-finder</h1>
+  <h1>studio-finder</h1>
 
   <select id="countryFilter">
     <option value="all">Alle Länder</option>
@@ -35,7 +35,9 @@
 
 
   
-  <script>
+<script>
+  let alleStudios = []; // global, damit Filter Zugriff hat
+
   async function studiosTable() {
     const dateien = [
       'studiosDE.json',
@@ -43,23 +45,28 @@
       'studiosINT.json'
     ];
 
-    const studios = [];
+    const alle = [];
 
     for (const dateiname of dateien) {
       try {
         const response = await fetch(dateiname);
-        const studios = await response.json();
-        studios.push(...studios);
+        const daten = await response.json();
+        alle.push(...daten); // korrekt: daten in alle pushen
       } catch (error) {
         console.error(`Fehler beim Laden von ${dateiname}:`, error);
       }
     }
 
-    // Sortieren nach Name
-    studios.sort((a, b) => a.name.localeCompare(b.name));
+    alleStudios = alle; // global verfügbar machen
+    zeigeStudios(alleStudios); // initial anzeigen
+  }
 
-    // In eine Tabelle schreiben
+  function zeigeStudios(studios) {
     const tbody = document.getElementById('all-studios');
+    tbody.innerHTML = ''; // vorherige Einträge löschen
+
+    studios.sort((a, b) => a.name.localeCompare(b.name)); // alphabetisch
+
     studios.forEach(studio => {
       const row = document.createElement('tr');
       row.innerHTML = `
@@ -73,16 +80,17 @@
     });
   }
 
-//   studiosTable();
+  // Filter
+  document.getElementById('countryFilter').addEventListener('change', (event) => {
+    const selected = event.target.value;
+    const filtered = selected === 'all'
+      ? alleStudios
+      : alleStudios.filter(s => s.country === selected);
+    zeigeStudios(filtered);
+  });
 
-//   document.getElementById('countryFilter').addEventListener('change', (event) => {
-//   const selected = event.target.value;
-//   const filtered = selected === 'all'
-//     ? studios
-//     : studios.filter(s => s.country === selected);
-//   zeigeStudios(filtered);
-// });
-
+  // Start
+  studiosTable();
 </script>
 
 </body>
