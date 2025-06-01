@@ -1,4 +1,11 @@
 [
- 
+ {
+    "name": "Near Future Laboratory",
+    "website": "https://nearfuturelaboratory.com",
+    "country": ["USA"],
+    "city": ["Venice Beach"],
+    "tags": ["research"],
+    "author": "Moritz"
+  }
 ]
 

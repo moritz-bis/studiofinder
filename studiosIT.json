@@ -126,8 +126,8 @@
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
+    "name": "Patricia Urquiola",
+    "website": "https://patriciaurquiola.com",
     "country": ["Italy"],
     "city": ["Milan"],
     "tags": ["furniture", "interior"],
@@ -135,86 +135,67 @@
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
+    "name": "Design Group Italia",
+    "website": "https://www.designgroupitalia.com",
     "country": ["Italy"],
     "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "tags": ["product", "UX/UI"],
     "author": "Moritz"
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
+    "name": "Luca Gnizio",
+    "website": "https://www.lucagnizio.com",
     "country": ["Italy"],
-    "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "city": ["Lucca"],
+    "tags": ["sustainable", "product", "art"],
     "author": "Moritz"
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
+    "name": "Tatic",
+    "website": "https://www.taticdesignstudio.com",
     "country": ["Italy"],
     "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "tags": ["product"],
     "author": "Moritz"
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
-    "country": ["Italy"],
-    "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "name": "Sintesi Labs",
+    "website": "https://sintesilabs.eu/de/",
+    "country": ["Italy", "Germany"],
+    "city": ["Milan", "Munich"],
+    "tags": ["product"],
     "author": "Moritz"
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
+    "name": "2050+",
+    "website": "https://2050.plus",
     "country": ["Italy"],
     "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "tags": ["research", "exhibition", "architecture"],
     "author": "Moritz"
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
+    "name": "Federico Angi",
+    "website": "http://www.federico-angi.com",
     "country": ["Italy"],
     "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "tags": ["furniture", "product"],
     "author": "Moritz"
   },
 
   {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
-    "country": ["Italy"],
-    "city": ["Milan"],
-    "tags": ["furniture", "interior"],
-    "author": "Moritz"
-  },
-
-  {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
-    "country": ["Italy"],
-    "city": ["Milan"],
-    "tags": ["furniture", "interior"],
-    "author": "Moritz"
-  },
-
-  {
-    "name": "Toan Nguyen",
-    "website": "https://toan-nguyen.com",
-    "country": ["Italy"],
-    "city": ["Milan"],
-    "tags": ["furniture", "interior"],
+    "name": "MM Design",
+    "website": "https://www.mmdesign.eu/en/",
+    "country": ["Italy", "Brasil", "Singapore"],
+    "city": ["Milan", "Bozen", "Sao Paulo", "Singapore"],
+    "tags": ["product", "industry"],
     "author": "Moritz"
   }
-
 
 ]
 
