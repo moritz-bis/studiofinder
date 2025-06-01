@@ -31,6 +31,11 @@ h1 {
   align-items: center;
 }
 
+h2 {
+  font-family: 'Oxygen Mono', monospace;
+  margin-bottom: 2rem;
+}
+
 a {
   color: #45c473;
   text-decoration: none;
@@ -47,8 +52,8 @@ a:hover {
 
 .tag {
   display: inline-block;
-  background-color: #eee;       /* heller Hintergrund */
-  color: #333;                  /* dunkle Schrift */
+  background-color: #45c473;       /* heller Hintergrund */
+  color: #ffffff;                  /* dunkle Schrift */
   padding: 0.2em 0.5em;         /* etwas Abstand innen */
   margin: 0.2em;                /* Abstand zu anderen Tags */
   border-radius: 0.5em;         /* abgerundete Ecken */
