@@ -13,6 +13,8 @@
   
   <h1>studio finder</h1>
 
+  <p id="stats"></p>
+
   <label for="countryFilter">country:</label>
   <select id="countryFilter">
     <option value="all">all countries</option>
@@ -96,6 +98,23 @@
     }
   }
 
+  // Stats für unter Logo
+  function updateStats(visibleStudios) {
+  const statsElement = document.getElementById("stats");
+
+  const numStudios = visibleStudios.length;
+
+  // Alle Städte aus den sichtbaren Studios sammeln
+  const citySet = new Set();
+  visibleStudios.forEach(studio => {
+    studio.city.forEach(city => citySet.add(city));
+  });
+
+  const numCities = citySet.size;
+
+  statsElement.textContent = `${numStudios} studios in ${numCities} cities`;
+}
+
   // Studios nach Filter anzeigen
   function renderStudios() {
     const selectedCountry = countryFilter.value;
@@ -109,6 +128,9 @@
 
     // Tabelle leeren
     tbody.innerHTML = "";
+
+    // Filter unter Logo update
+    updateStats(filtered);
 
     // Studios eintragen
     filtered.forEach(studio => {
