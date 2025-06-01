@@ -31,25 +31,6 @@ h1 {
   align-items: center;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
-th, td {
-  /* border: 1px solid #ccc; */
-  padding: 0.5rem;
-  text-align: center;
-  line-height: 1,2;
-}
-
-th {
-  color: #333;
-  text-decoration: underline;
-}
-
 a {
   color: #45c473;
   text-decoration: none;
@@ -60,11 +41,36 @@ a:hover {
 }
 
 .tag {
-    background-color: #45c473;
-    color: white;
-    /* padding: 2px 6px;
-    margin: 2px;
-    border-radius: 4px;
-    font-size: 0.85em;
-    display: inline-block; */
-  }
+  background-color: #45c473;
+  color: white;
+}
+
+
+
+/* Tabelle */
+
+table {
+  width: 100%;
+  table-layout: fixed; /* wichtig für feste Spaltenbreiten */
+  border-collapse: collapse;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+th, td {
+  padding: 0.5rem;
+  text-align: center;
+  line-height: 1,2;
+}
+
+th {
+  color: #333;
+  text-decoration: underline;
+}
+
+/* Spaltenbreiten gezielt setzen */
+th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Name */
+th:nth-child(2), td:nth-child(2) { width: 25%; }  /* Website */
+th:nth-child(3), td:nth-child(3) { width: 15%; }  /* City */
+th:nth-child(4), td:nth-child(4) { width: 15%; }  /* Country */
+th:nth-child(5), td:nth-child(5) { width: 25%; }  /* Tags */
