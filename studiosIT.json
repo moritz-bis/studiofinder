@@ -38,11 +38,183 @@
   {
     "name": "Habits",
     "website": "https://www.habits.it/",
-    "country": ["Italy", "Thailand"],
-    "city": ["Milan", "Bankok"],
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Studio Irvine",
+    "website": "https://www.studio-irvine.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["product", "architecture", "art-direction"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Forma Fantasma",
+    "website": "https://formafantasma.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior", "exhibition", "research"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Antonio Lanzillo",
+    "website": "https://antoniolanzillo.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["product", "furniture", "transportation"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Giulia Vinaccia",
+    "website": "https://www.giuliovinaccia.org",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["sustainable", "consulting"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "We don't design",
+    "website": "https://wedontdesign.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["product", "art"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Alberto Meda",
+    "website": "https://www.albertomeda.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["product", "furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Finemateria",
+    "website": "https://www.finemateria.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Paolo Metaldi",
+    "website": "http://www.paolometaldi.com/index.html",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Toan Nguyen",
+    "website": "https://toan-nguyen.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
     "tags": ["furniture", "interior"],
     "author": "Moritz"
   }
+
 
 ]
 
