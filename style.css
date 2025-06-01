@@ -40,9 +40,20 @@ a:hover {
   text-decoration: underline;
 }
 
-.tag {
+/* .tag {
   background-color: #45c473;
   color: white;
+} */
+
+.tag {
+  display: inline-block;
+  background-color: #eee;       /* heller Hintergrund */
+  color: #333;                  /* dunkle Schrift */
+  padding: 0.2em 0.5em;         /* etwas Abstand innen */
+  margin: 0.2em;                /* Abstand zu anderen Tags */
+  border-radius: 0.5em;         /* abgerundete Ecken */
+  font-size: 0.9em;             /* etwas kleiner (optional) */
+  line-height: 1.5;             /* mehr Zeilenhöhe */
 }
 
 
@@ -60,7 +71,7 @@ table {
 th, td {
   padding: 0.5rem;
   text-align: center;
-  line-height: 1,2;
+  /* line-height: 1,2; */
 }
 
 th {
