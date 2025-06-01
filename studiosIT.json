@@ -195,6 +195,141 @@
     "city": ["Milan", "Bozen", "Sao Paulo", "Singapore"],
     "tags": ["product", "industry"],
     "author": "Moritz"
+  },
+
+  {
+    "name": "Fishform",
+    "website": "https://www.fishform.it",
+    "country": ["Italy"],
+    "city": ["Verona"],
+    "tags": ["product", "industry"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "TRO",
+    "website": "https://www.troitaly.com/en/",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["exhibition", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Cristian Celestino",
+    "website": "https://cristinacelestino.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior", "art-direction"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Studio Utte",
+    "website": "https://www.studioutte.com/home/",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Andrea Mancuso",
+    "website": "https://andreamancuso.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "6:Am",
+    "website": "https://6am.glass",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["interior", "art"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Federica Biasi",
+    "website": "https://www.federicabiasi.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["art-direction", "product", "exhibition", "research"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Roberto Sironi",
+    "website": "https://www.robertosironi.it",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "art"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "NM3",
+    "website": "https://nm3.xyz",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["interior", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Federico Peri",
+    "website": "https://www.federicoperi.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Lanzavecchia + Wai",
+    "website": "https://www.lanzavecchia-wai.com",
+    "country": ["Italy", "Singapore"],
+    "city": ["Milan", "Singapore"],
+    "tags": ["consulting"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Francesco Meda",
+    "website": "https://www.francescomeda.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Valerio Sommella",
+    "website": "https://www.sommella.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Maddalena Casadei",
+    "website": "https://www.maddalenacasadei.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Carlo Ratti",
+    "website": "https://carlorattiassociati.com",
+    "country": ["Italy"],
+    "city": ["Turin"],
+    "tags": ["research", "architecture", "interior"],
+    "author": "Moritz"
   }
 
 ]
