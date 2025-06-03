@@ -41,35 +41,22 @@
 
   
 <script>
-  // Globale Variable zum Speichern der Studios
   let studios = [];
 
-  // DOM-Elemente
   const tbody = document.getElementById("studioTableBody");
   const countryFilter = document.getElementById("countryFilter");
   const cityFilter = document.getElementById("cityFilter");
 
-  // Automatisch zwischen offline und online wählen
-  const useLocalData = location.hostname === "localhost";
-
-  // Studiendaten laden – je nach Umgebung
   async function loadStudios() {
     try {
-      const response = await fetch(
-        useLocalData
-          ? "studios.json"  // Lokale JSON-Datei
-          : "https://api.baserow.io/api/database/rows/table/561335/?user_field_names=true",
-        useLocalData
-          ? {}
-          : {
-              headers: {
-                Authorization: "Wejzj9ZZuiuTFCkOEHciQZYNIAir1FTU"
-              }
-            }
-      );
+      const response = await fetch("https://api.baserow.io/api/database/rows/table/561335/?user_field_names=true", {
+        headers: {
+          Authorization: "Wejzj9ZZuiuTFCkOEHciQZYNIAir1FTU"
+        }
+      });
 
       const data = await response.json();
-      studios = data.results || data;
+      studios = data.results;
 
       initDropdowns(studios);
       renderStudios();
@@ -78,14 +65,17 @@
     }
   }
 
-  // Einmalig Dropdowns mit eindeutigen Werten befüllen
   function initDropdowns(studios) {
     const allCountries = new Set();
     const allCities = new Set();
 
     studios.forEach(studio => {
-      studio.country.forEach(c => allCountries.add(c));
-      studio.city.forEach(c => allCities.add(c));
+      if (Array.isArray(studio.country)) {
+        studio.country.forEach(c => allCountries.add(c.value || c));
+      }
+      if (Array.isArray(studio.city)) {
+        studio.city.forEach(c => allCities.add(c.value || c));
+      }
     });
 
     for (const country of Array.from(allCountries).sort()) {
@@ -103,64 +93,57 @@
     }
   }
 
-  // Stats für unter Logo
   function updateStats(visibleStudios) {
-  const statsElement = document.getElementById("stats");
+    const statsElement = document.getElementById("stats");
+    const numStudios = visibleStudios.length;
+    const citySet = new Set();
 
-  const numStudios = visibleStudios.length;
+    visibleStudios.forEach(studio => {
+      (studio.city || []).forEach(city => {
+        citySet.add(city.value || city);
+      });
+    });
 
-  // Alle Städte aus den sichtbaren Studios sammeln
-  const citySet = new Set();
-  visibleStudios.forEach(studio => {
-    studio.city.forEach(city => citySet.add(city));
-  });
+    statsElement.textContent = `${numStudios} studios in ${citySet.size} cities`;
+  }
 
-  const numCities = citySet.size;
-
-  statsElement.textContent = `${numStudios} studios in ${numCities} cities`;
-}
-
-  // Studios nach Filter anzeigen
   function renderStudios() {
     const selectedCountry = countryFilter.value;
     const selectedCity = cityFilter.value;
 
     const filtered = studios.filter(studio => {
-      const countryMatch = selectedCountry === "all" || studio.country.includes(selectedCountry);
-      const cityMatch = selectedCity === "all" || studio.city.includes(selectedCity);
+      const studioCountries = (studio.country || []).map(c => c.value || c);
+      const studioCities = (studio.city || []).map(c => c.value || c);
+
+      const countryMatch = selectedCountry === "all" || studioCountries.includes(selectedCountry);
+      const cityMatch = selectedCity === "all" || studioCities.includes(selectedCity);
+
       return countryMatch && cityMatch;
     });
 
-    // Tabelle leeren
     tbody.innerHTML = "";
-
-    // Filter unter Logo update
     updateStats(filtered);
 
-    // Studios eintragen
     filtered.forEach(studio => {
       const row = document.createElement("tr");
+      const websiteLink = studio.website ? `<a href="${studio.website}" target="_blank">${studio.website}</a>` : "";
+
       row.innerHTML = `
-        <td>${studio.name}</td>
-        <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
-        <td>${studio.city.join(', ')}</td>
-        <td>${studio.country.join(', ')}</td>
-        <td>${studio.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}</td>
+        <td>${studio.name || ""}</td>
+        <td>${websiteLink}</td>
+        <td>${(studio.city || []).map(c => c.value || c).join(', ')}</td>
+        <td>${(studio.country || []).map(c => c.value || c).join(', ')}</td>
+        <td>${(studio.tags || []).map(tag => `<span class="tag">${tag.value || tag}</span>`).join(' ')}</td>
       `;
+
       tbody.appendChild(row);
     });
   }
 
-  // Filter-Events
   countryFilter.addEventListener("change", renderStudios);
   cityFilter.addEventListener("change", renderStudios);
 
-  // Daten laden und starten
   loadStudios();
-</script>
-
-<script data-goatcounter="https://studio-finder.goatcounter.com/count"
-  async src="//gc.zgo.at/count.js">
 </script>
 
 </body>
