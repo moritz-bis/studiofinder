@@ -41,7 +41,7 @@
 
   
 <script>
-  // Globale Variable zum Speichern der kombinierten Studios
+  // Globale Variable zum Speichern der Studios
   let studios = [];
 
   // DOM-Elemente
@@ -49,23 +49,28 @@
   const countryFilter = document.getElementById("countryFilter");
   const cityFilter = document.getElementById("cityFilter");
 
-  // Studiendaten aus beiden JSON-Dateien laden
+  // Automatisch zwischen offline und online wählen
+  const useLocalData = location.hostname === "localhost";
+
+  // Studiendaten laden – je nach Umgebung
   async function loadStudios() {
     try {
-      const [deResponse, itResponse] = await Promise.all([
-        fetch('studiosDE.json'),
-        fetch('studiosIT.json')
-      ]);
+      const response = await fetch(
+        useLocalData
+          ? "studios.json"  // Lokale JSON-Datei
+          : "https://api.baserow.io/api/database/rows/table/561335/?user_field_names=true",
+        useLocalData
+          ? {}
+          : {
+              headers: {
+                Authorization: "Wejzj9ZZuiuTFCkOEHciQZYNIAir1FTU"
+              }
+            }
+      );
 
-      const [studiosDE, studiosIT] = await Promise.all([
-        deResponse.json(),
-        itResponse.json()
-      ]);
+      const data = await response.json();
+      studios = data.results || data;
 
-      // Kombinieren der beiden Arrays
-      studios = [...studiosDE, ...studiosIT];
-
-      // Initialisierung von Dropdowns und Tabelle
       initDropdowns(studios);
       renderStudios();
     } catch (error) {
