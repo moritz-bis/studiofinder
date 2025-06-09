@@ -1,18 +1,13 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <title>studio-finder</title>
-
   <link rel="stylesheet" href="style.css">
-
 </head>
-
-
 <body>
-  
-  <h1>studio finder</h1>
 
+  <h1>studio finder</h1>
   <p id="stats"></p>
 
   <label for="countryFilter">country:</label>
@@ -38,14 +33,15 @@
     <tbody id="studioTableBody"></tbody>
   </table>
 
-
-  
 <script>
   let studios = [];
 
   const tbody = document.getElementById("studioTableBody");
   const countryFilter = document.getElementById("countryFilter");
   const cityFilter = document.getElementById("cityFilter");
+
+  const viewId = "FaO2AXrrzWaa1b9xYNO9M4xSBodrbcsGA86TcytQlaI"; // <- DEIN VIEW-ID
+  const baseUrl = `https://api.baserow.io/api/public/database/rows/view/${viewId}/?user_field_names=true`;
 
   async function loadStudios() {
     studios = [];
@@ -81,27 +77,23 @@
     const allCities = new Set();
 
     studios.forEach(studio => {
-      if (Array.isArray(studio.country)) {
-        studio.country.forEach(c => allCountries.add(c.value || c));
-      }
-      if (Array.isArray(studio.city)) {
-        studio.city.forEach(c => allCities.add(c.value || c));
-      }
+      (studio.country || []).forEach(c => allCountries.add(c.value || c));
+      (studio.city || []).forEach(c => allCities.add(c.value || c));
     });
 
-    for (const country of Array.from(allCountries).sort()) {
+    Array.from(allCountries).sort().forEach(country => {
       const opt = document.createElement("option");
       opt.value = country;
       opt.textContent = country;
       countryFilter.appendChild(opt);
-    }
+    });
 
-    for (const city of Array.from(allCities).sort()) {
+    Array.from(allCities).sort().forEach(city => {
       const opt = document.createElement("option");
       opt.value = city;
       opt.textContent = city;
       cityFilter.appendChild(opt);
-    }
+    });
   }
 
   function updateStats(visibleStudios) {
@@ -110,9 +102,7 @@
     const citySet = new Set();
 
     visibleStudios.forEach(studio => {
-      (studio.city || []).forEach(city => {
-        citySet.add(city.value || city);
-      });
+      (studio.city || []).forEach(city => citySet.add(city.value || city));
     });
 
     statsElement.textContent = `${numStudios} studios in ${citySet.size} cities`;
@@ -123,11 +113,11 @@
     const selectedCity = cityFilter.value;
 
     const filtered = studios.filter(studio => {
-      const studioCountries = (studio.country || []).map(c => c.value || c);
-      const studioCities = (studio.city || []).map(c => c.value || c);
+      const countries = (studio.country || []).map(c => c.value || c);
+      const cities = (studio.city || []).map(c => c.value || c);
 
-      const countryMatch = selectedCountry === "all" || studioCountries.includes(selectedCountry);
-      const cityMatch = selectedCity === "all" || studioCities.includes(selectedCity);
+      const countryMatch = selectedCountry === "all" || countries.includes(selectedCountry);
+      const cityMatch = selectedCity === "all" || cities.includes(selectedCity);
 
       return countryMatch && cityMatch;
     });
