@@ -61,15 +61,27 @@
           }
         });
 
-        const data = await response.json();
-        studios = studios.concat(data.results);
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
 
-        if (data.results.length < limit) {
-          moreData = false; // Letzte Seite erreicht
+        const data = await response.json();
+
+        if (Array.isArray(data.results)) {
+          studios = studios.concat(data.results);
+          if (data.results.length < limit) {
+            moreData = false;
+          } else {
+            offset += limit;
+          }
         } else {
-          offset += limit; // Nächste Seite laden
+          console.error("Keine gültige Antwortstruktur:", data);
+          moreData = false;
         }
       }
+
+      console.log("Anzahl Studios geladen:", studios.length);
+      console.log("Beispiel-Studio:", studios[0]);
 
       initDropdowns(studios);
       renderStudios();
