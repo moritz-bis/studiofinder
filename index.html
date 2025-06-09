@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="eng">
 <head>
   <meta charset="UTF-8" />
   <title>studio-finder</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+  
   <h1>studio finder</h1>
+
   <p id="stats"></p>
 
   <label for="countryFilter">country:</label>
@@ -33,6 +38,8 @@
     <tbody id="studioTableBody"></tbody>
   </table>
 
+
+  
 <script>
   let studios = [];
 
@@ -40,31 +47,17 @@
   const countryFilter = document.getElementById("countryFilter");
   const cityFilter = document.getElementById("cityFilter");
 
-  const viewId = "FaO2AXrrzWaa1b9xYNO9M4xSBodrbcsGA86TcytQlaI"; // <- DEIN VIEW-ID
-  const baseUrl = `https://api.baserow.io/api/public/database/rows/view/${viewId}/?user_field_names=true`;
-
   async function loadStudios() {
-    studios = [];
-    let offset = 0;
-    const limit = 100;
-    let moreData = true;
-
     try {
-      while (moreData) {
-        const response = await fetch(`${baseUrl}&limit=${limit}&offset=${offset}`);
-        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
-
-        const data = await response.json();
-        studios = studios.concat(data.results);
-
-        if (data.results.length < limit) {
-          moreData = false;
-        } else {
-          offset += limit;
+      const response = await fetch("https://api.baserow.io/api/database/rows/table/561335/?user_field_names=true", {
+        headers: {
+          Authorization: "Token Wejzj9ZZuiuTFCkOEHciQZYNIAir1FTU"
         }
-      }
+      });
 
-      console.log("Studios geladen:", studios.length);
+      const data = await response.json();
+      studios = data.results;
+
       initDropdowns(studios);
       renderStudios();
     } catch (error) {
@@ -77,23 +70,27 @@
     const allCities = new Set();
 
     studios.forEach(studio => {
-      (studio.country || []).forEach(c => allCountries.add(c.value || c));
-      (studio.city || []).forEach(c => allCities.add(c.value || c));
+      if (Array.isArray(studio.country)) {
+        studio.country.forEach(c => allCountries.add(c.value || c));
+      }
+      if (Array.isArray(studio.city)) {
+        studio.city.forEach(c => allCities.add(c.value || c));
+      }
     });
 
-    Array.from(allCountries).sort().forEach(country => {
+    for (const country of Array.from(allCountries).sort()) {
       const opt = document.createElement("option");
       opt.value = country;
       opt.textContent = country;
       countryFilter.appendChild(opt);
-    });
+    }
 
-    Array.from(allCities).sort().forEach(city => {
+    for (const city of Array.from(allCities).sort()) {
       const opt = document.createElement("option");
       opt.value = city;
       opt.textContent = city;
       cityFilter.appendChild(opt);
-    });
+    }
   }
 
   function updateStats(visibleStudios) {
@@ -102,7 +99,9 @@
     const citySet = new Set();
 
     visibleStudios.forEach(studio => {
-      (studio.city || []).forEach(city => citySet.add(city.value || city));
+      (studio.city || []).forEach(city => {
+        citySet.add(city.value || city);
+      });
     });
 
     statsElement.textContent = `${numStudios} studios in ${citySet.size} cities`;
@@ -113,11 +112,11 @@
     const selectedCity = cityFilter.value;
 
     const filtered = studios.filter(studio => {
-      const countries = (studio.country || []).map(c => c.value || c);
-      const cities = (studio.city || []).map(c => c.value || c);
+      const studioCountries = (studio.country || []).map(c => c.value || c);
+      const studioCities = (studio.city || []).map(c => c.value || c);
 
-      const countryMatch = selectedCountry === "all" || countries.includes(selectedCountry);
-      const cityMatch = selectedCity === "all" || cities.includes(selectedCity);
+      const countryMatch = selectedCountry === "all" || studioCountries.includes(selectedCountry);
+      const cityMatch = selectedCity === "all" || studioCities.includes(selectedCity);
 
       return countryMatch && cityMatch;
     });
