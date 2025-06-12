@@ -41,14 +41,14 @@ a {
   text-decoration: underline;
 }
 
-/* a:hover {
+a:hover {
   text-decoration: underline;
-} */
+}
 
 .tag {
   display: inline-block;
-  background-color: #45c473;       /* heller Hintergrund */
-  color: #ffffff;                  /* dunkle Schrift */
+  background-color: #45c473;       /* grüer Hintergrund */
+  color: #ffffff;                  /* weiße Schrift */
   padding: 0.2em 0.5em;         /* etwas Abstand innen */
   margin: 0.2em;                /* Abstand zu anderen Tags */
   border-radius: 0.5em;         /* abgerundete Ecken */
