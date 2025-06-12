@@ -952,6 +952,98 @@
     "city": ["Tokyo"],
     "tags": ["art", "product", "architecture"],
     "author": "Moritz"
+  },
+
+  {
+    "name": "Kodai Iwamoto",
+    "website": "https://www.kohdaiiwamoto.com",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Shigeki Fujishiro",
+    "website": "http://shigekifujishiro.com",
+    "country": ["Japan"],
+    "city": ["Nagano"],
+    "tags": ["product", "furniture"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Takram",
+    "website": "https://www.takram.com",
+    "country": ["Japan", "USA", "UK", "China"],
+    "city": ["Tokyo", "New-York", "London", "Shanghai"],
+    "tags": ["product", "branding"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Jin Kuramoto",
+    "website": "https://www.jinkuramoto.com",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Ian Lynam",
+    "website": "https://ianlynam.com",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["graphic", "research"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Satomi Minoshima",
+    "website": "https://www.satomiminoshima.com",
+    "country": ["Netherlands"],
+    "city": ["Eindhoven"],
+    "tags": ["furniture", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "We+",
+    "website": "https://weplus.jp",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["product", "research", "interior", "exhibition"],
+    "author": "Moritz",
+    "favorite": ["Moritz"]
+  },
+
+  {
+    "name": "Mikiya Kobayashi",
+    "website": "https://www.mikiyakobayashi.com",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["product", "furniture"],
+    "author": "Moritz",
+    "favorite": ["Moritz"]
+  },
+
+  {
+    "name": "id inc",
+    "website": "https://id-inc.jp",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["interior", "furniture", "exhibition", "product", "graphic"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "nendo",
+    "website": "https://www.nendo.jp",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["product", "furniture", "architecture", "graphic"],
+    "author": "Moritz"
   }
 
 ]
