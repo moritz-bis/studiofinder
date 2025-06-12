@@ -38,16 +38,11 @@ h2 {
 
 a {
   color: #45c473;
-  text-decoration: none;
-}
-
-a:hover {
   text-decoration: underline;
 }
 
-/* .tag {
-  background-color: #45c473;
-  color: white;
+/* a:hover {
+  text-decoration: underline;
 } */
 
 .tag {
@@ -90,7 +85,5 @@ th {
 
 /* Spaltenbreiten gezielt setzen */
 th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Name */
-th:nth-child(2), td:nth-child(2) { width: 25%; }  /* Website */
-th:nth-child(3), td:nth-child(3) { width: 15%; }  /* City */
-th:nth-child(4), td:nth-child(4) { width: 15%; }  /* Country */
-th:nth-child(5), td:nth-child(5) { width: 25%; }  /* Tags */
+th:nth-child(2), td:nth-child(2) { width: 20%; }  /* City */
+th:nth-child(3), td:nth-child(3) { width: 60%; }  /* tags */
