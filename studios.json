@@ -1,7 +1,7 @@
 [
   {
-    "website": "https://bureauborsche.com",
     "name": "Bureau Borsche",
+    "website": "https://bureauborsche.com",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["digital", "editorial", "graphic", "art-direction"],
@@ -10,8 +10,8 @@
   },
   
   {
-    "website": "https://nicolastattmann.com",
     "name": "Nicola Stattmann",
+    "website": "https://nicolastattmann.com",
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["product", "furniture"],
@@ -19,8 +19,8 @@
   },
 
   {
-    "website": "https://www.duo-ade.com",    
     "name": "Duo Ade",
+    "website": "https://www.duo-ade.com",    
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["graphic", "editorial"],
@@ -28,8 +28,8 @@
   },
 
   {
-    "website": "https://schumacher-design.de",
     "name": "Schuhmacher",
+    "website": "https://schumacher-design.de",
     "country": ["Germany"],
     "city": ["Berlin", "Darmstadt"],
     "tags": ["branding", "interaction"],
@@ -37,8 +37,8 @@
   },
 
   {
-    "website": "https://theboysclub.berlin",
     "name": "the boys club",
+    "website": "https://theboysclub.berlin",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["graphic", "illustration"],
@@ -46,8 +46,8 @@
   },
 
   {
-    "website": "https://www.markgraph.de",
     "name": "Atelier Markgraph",
+    "website": "https://www.markgraph.de",
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["exhibition"],
@@ -55,8 +55,8 @@
   },
 
   {
-    "website": "https://www.kailinke.com",
     "name": "Kai Linke",
+    "website": "https://www.kailinke.com",
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["product", "exhibition", "furniture"],
@@ -64,8 +64,8 @@
   },
 
   {
-    "website": "https://www.konradlohoefener.de",
     "name": "Konrad Lohöfener",
+    "website": "https://www.konradlohoefener.de",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["product", "furniture"],
@@ -73,8 +73,8 @@
   },
 
   {
-    "website": "https://deutscheundjapaner.com",
     "name": "Deutsche und Japaner",
+    "website": "https://deutscheundjapaner.com",
     "country": ["Germany"],
     "city": ["Berlin", "Mannheim"],
     "tags": ["branding", "graphic", "art direction"],
@@ -82,8 +82,8 @@
   },
 
   {
-    "website": "https://laeuferkeichel.de",
     "name": "Läufer und Keichel",
+    "website": "https://laeuferkeichel.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["sustainable", "furniture", "product"],
@@ -91,8 +91,8 @@
   },
 
   {
-    "website": "https://artcom.de",
     "name": "Art + Com",
+    "website": "https://artcom.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["art", "communication", "research"],
@@ -100,8 +100,8 @@
   },
 
   {
-    "website": "https://aisslinger.de",
     "name": "Studio Aisslinger",
+    "website": "https://aisslinger.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["interior", "furniture", "branding"],
@@ -109,8 +109,8 @@
   },
 
   {
-    "website": "https://www.thedarkhorse.de",
     "name": "Dark Horse",
+    "website": "https://www.thedarkhorse.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["consulting"],
@@ -118,8 +118,8 @@
   },
 
   {
-    "website": "https://www.strichpunkt-design.de",
     "name": "Strichpunkt",
+    "website": "https://www.strichpunkt-design.de",
     "country": ["Germany"],
     "city": ["Berlin", "Stuttgart", "Hamburg"],
     "tags": ["branding", "editorial", "graphic"],
@@ -127,8 +127,8 @@
   },
 
   {
-    "website": "https://ertlundzull.de",
     "name": "Ertl und Zull",
+    "website": "https://ertlundzull.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["interior", "furniture", "product"],
@@ -136,8 +136,8 @@
   },
 
   {
-    "website": "https://konstantin-grcic.com",
     "name": "Konstantin Grcic",
+    "website": "https://konstantin-grcic.com",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["furniture", "product", "exhibiton"],
@@ -145,8 +145,8 @@
   },
 
   {
-    "website": "https://rojahn-design.com",
     "name": "Rojahn Design",
+    "website": "https://rojahn-design.com",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["product", "industry"],
@@ -154,8 +154,8 @@
   },
 
   {
-    "website": "https://www.peter-schmidt-group.de/index.php/en/home",
     "name": "Peter Schmidt Group",
+    "website": "https://www.peter-schmidt-group.de/index.php/en/home",
     "country": ["Germany", "Italy", "Portugal", "Japan"],
     "city": ["Hamburg", "Frankfurt", "Düsseldorf", "Munich", "Milan", "Lisbon", "Tokyo"],
     "tags": ["branding"],
@@ -163,8 +163,8 @@
   },
 
   {
-    "website": "https://www.mehnertdesign.de",
     "name": "Mehnert Design",
+    "website": "https://www.mehnertdesign.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["product", "interior", "branding"],
@@ -172,8 +172,8 @@
   },
 
   {
-    "website": "https://zielform-london.berlin",
     "name": "Zielform London Berlin",
+    "website": "https://zielform-london.berlin",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["product"],
@@ -181,17 +181,17 @@
   },
 
   {
-    "website": "https://make.studio",
     "name": "Make Studio",
+    "website": "https://make.studio",
     "country": ["Germany"],
     "city": ["Hamburg"],
-    "tags": ["branding", "UX/UI"],
+    "tags": ["branding", "UI/UX"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://studioveh.com",
     "name": "Studio Veh",
+    "website": "https://studioveh.com",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["branding"],
@@ -199,8 +199,8 @@
   },
 
   {
-    "website": "https://herburg-weiland.de/de",
     "name": "Herburg Weiland",
+    "website": "https://herburg-weiland.de/de",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["branding"],
@@ -208,8 +208,8 @@
   },
 
   {
-    "website": "https://www.aroma-id.de",
     "name": "aroma:id",
+    "website": "https://www.aroma-id.de",
     "country": ["Germany"],
     "city": ["Offenbach"],
     "tags": ["product"],
@@ -217,17 +217,17 @@
   },
 
   {
-    "website": "https://cnp.studio",
     "name": "Studio CNP",
+    "website": "https://cnp.studio",
     "country": ["Germany"],
     "city": ["Munich"],
-    "tags": ["editorial", "art", "art direction", "UX/UI"],
+    "tags": ["editorial", "art", "art direction", "UI/UX"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://www.weissraum.de",
     "name": "Weissraum Design",
+    "website": "https://www.weissraum.de",
     "country": ["Germany"],
     "city": ["Hamburg"],
     "tags": ["branding"],
@@ -235,8 +235,8 @@
   },
 
   {
-    "website": "https://www.pong.design/en/",
     "name": "PONG",
+    "website": "https://www.pong.design/en/",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["product"],
@@ -244,8 +244,8 @@
   },
 
   {
-    "website": "https://www.invivodesign.de",
     "name": "Invivo",
+    "website": "https://www.invivodesign.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["product"],
@@ -253,8 +253,8 @@
   },
 
   {
-    "website": "https://www.bureau-n.de",
     "name": "Bureau N",
+    "website": "https://www.bureau-n.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["consulting"],
@@ -262,8 +262,8 @@
   },
 
   {
-    "website": "https://oha.international",
     "name": "Office Heinzelmann Ayadi",
+    "website": "https://oha.international",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["product", "furniture"],
@@ -271,8 +271,8 @@
   },
 
   {
-    "website": "https://www.eckstein-design.com",
     "name": "Eckstein Design",
+    "website": "https://www.eckstein-design.com",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["branding", "product"],
@@ -280,8 +280,8 @@
   },
 
   {
-    "website": "https://whitelime.de",
     "name": "White Lime",
+    "website": "https://whitelime.de",
     "country": ["Germany"],
     "city": ["Frankfurt", "Cologne", "Goettingen"],
     "tags": ["product"],
@@ -289,8 +289,8 @@
   },
 
   {
-    "website": "https://y-u-k-i-k-o.com",
     "name": "Studio Yukiko",
+    "website": "https://y-u-k-i-k-o.com",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["branding", "art-direction", "graphic"],
@@ -298,17 +298,17 @@
   },
 
   {
-    "website": "https://www.y-si.studio/de",
     "name": "Studio Y-si",
+    "website": "https://www.y-si.studio/de",
     "country": ["Germany"],
     "city": ["Munich"],
-    "tags": ["UX/UI", "sustainable"],
+    "tags": ["UI/UX", "sustainable"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://omc-c.com",
     "name": "OMC C",
+    "website": "https://omc-c.com",
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["product", "sustainable"],
@@ -316,8 +316,8 @@
   },
 
   {
-    "website": "https://andless.studio",
     "name": "andless",
+    "website": "https://andless.studio",
     "country": ["Germany"],
     "city": ["Frankfurt"],
     "tags": ["product"],
@@ -325,8 +325,8 @@
   },
 
   {
-    "website": "https://www.markbraun.org/start/",
     "name": "Studio Mark Braun",
+    "website": "https://www.markbraun.org/start/",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["product", "furniture"],
@@ -334,26 +334,26 @@
   },
 
   {
-    "website": "https://neomind.eu",
     "name": "Neomind",
+    "website": "https://neomind.eu",
     "country": ["Germany", "USA"],
-    "city": ["Munich", "Frankfurt", "San Francisco"],
+    "city": ["Munich", "Frankfurt", "San-Francisco"],
     "tags": ["transportation", "product", "branding"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://www.onogrit.com",
     "name": "Onogrit Studio",
+    "website": "https://www.onogrit.com",
     "country": ["Germany"],
     "city": ["Cologne"],
-    "tags": ["branding", "UX/UI", "editorial"],
+    "tags": ["branding", "UI/UX", "editorial"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://www.np-id.com",
     "name": "N+P",
+    "website": "https://www.np-id.com",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["transportation", "industry", "product"],
@@ -361,8 +361,8 @@
   },
 
   {
-    "website": "https://3deluxe.de/de",
     "name": "3deluxe",
+    "website": "https://3deluxe.de/de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["branding", "interior", "architecture"],
@@ -370,8 +370,8 @@
   },
 
   {
-    "website": "https://www.morroni.lu",
     "name": "Morroni",
+    "website": "https://www.morroni.lu",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["product"],
@@ -379,8 +379,8 @@
   },
 
   {
-    "website": "https://newstandard.studio",
     "name": "new standard.s",
+    "website": "https://newstandard.studio",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["branding", "consulting", "sustainable"],
@@ -388,8 +388,8 @@
   },
 
   {
-    "website": "https://raumlabor.net",
     "name": "Raumlabor",
+    "website": "https://raumlabor.net",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["exhibition", "architecture", "sustainable"],
@@ -397,8 +397,8 @@
   },
 
   {
-    "website": "https://mykilos.com",
     "name": "Mykilos",
+    "website": "https://mykilos.com",
     "country": ["Germany"],
     "city": ["Berlin", "Hamburg"],
     "tags": ["interior"],
@@ -406,8 +406,8 @@
   },
 
   {
-    "website": "https://raumlichtlabor.de/index.html",
     "name": "Raumlichtlabor",
+    "website": "https://raumlichtlabor.de/index.html",
     "country": ["Germany"],
     "city": ["Potsdam"],
     "tags": ["exhibition", "interior", "product"],
@@ -415,8 +415,8 @@
   },
 
   {
-    "website": "https://oh-studio.de",
     "name": "OH Studio",
+    "website": "https://oh-studio.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["art", "exhibition", "sustainable"],
@@ -424,17 +424,17 @@
   },
 
   {
-    "website": "https://www.pilotfish.eu",
     "name": "Pilotfish",
+    "website": "https://www.pilotfish.eu",
     "country": ["Germany", "Portugal", "Netherlands", "Taiwan"],
     "city": ["Berlin", "Lisbon", "Amsterdam", "Teipei"],
-    "tags": ["product", "industry", "UX/UI"],
+    "tags": ["product", "industry", "UI/UX"],
     "author": "Moritz"
   },
 
   {
-    "website": "https://buero-staubach.de",
     "name": "Buero Staubach",
+    "website": "https://buero-staubach.de",
     "country": ["Germany"],
     "city": ["Berlin"],
     "tags": ["transportation", "industry"],
@@ -442,8 +442,8 @@
   },
 
   {
-    "website": "https://www.werteloberfell.com",
     "name": "WertelOberfell",
+    "website": "https://www.werteloberfell.com",
     "country": ["Germany"],
     "city": ["Munich"],
     "tags": ["product", "furniture"],
@@ -451,8 +451,8 @@
   },
 
   {
-    "website": "https://www.yrd.works",
     "name": "YRD.Works",
+    "website": "https://www.yrd.works",
     "country": ["Germany"],
     "city": ["Offenbach"],
     "tags": ["public", "art"],
@@ -599,7 +599,7 @@
     "website": "https://www.designgroupitalia.com",
     "country": ["Italy"],
     "city": ["Milan"],
-    "tags": ["product", "UX/UI"],
+    "tags": ["product", "UI/UX"],
     "author": "Moritz"
   },
 
@@ -789,6 +789,168 @@
     "country": ["Italy"],
     "city": ["Turin"],
     "tags": ["research", "architecture", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Near Future Laboratory",
+    "website": "https://nearfuturelaboratory.com",
+    "country": ["USA"],
+    "city": ["Venice Beach"],
+    "tags": ["research"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "smarin",
+    "website": "https://www.smarin.net/fr/",
+    "country": ["France"],
+    "city": ["Nice"],
+    "tags": ["exhibition", "interior", "furniture"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Edward Barber & Jay Osgerby",
+    "website": "https://barberosgerby.com",
+    "country": ["UK"],
+    "city": ["London"],
+    "tags": ["furniture", "product"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Álvaro Catalán de Ocón",
+    "website": "https://www.catalandeocon.com",
+    "country": ["Spain"],
+    "city": ["Madrid"],
+    "tags": ["furniture"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "atelier bingo",
+    "website": "https://atelier-bingo.fr",
+    "country": ["France"],
+    "city": ["Saint-Laurent-sur-Sevre"],
+    "tags": ["graphic"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Ana Kras",
+    "website": "https://anakras.com",
+    "country": ["France", "USA"],
+    "city": ["Paris", "New-York"],
+    "tags": ["furniture", "art", "photography"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Studio Ben Allen",
+    "website": "https://www.studiobenallen.com",
+    "country": ["UK"],
+    "city": ["London"],
+    "tags": ["interior", "architecture"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Joa Herrenknecht",
+    "website": "https://www.joa-herrenknecht.com",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["furniture", "product"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Tanita Klein",
+    "website": "https://tanitaklein.com",
+    "country": ["Denmark"],
+    "city": ["Copenhagen"],
+    "tags": ["product", "interior"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Gemma Roper",
+    "website": "https://gemmaroper.com/Homepage",
+    "country": ["USA"],
+    "city": ["San-Francisco"],
+    "tags": ["furniture", "UI/UX"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Sam Chermayeff",
+    "website": "https://samchermayeffoffice.com",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["architecture", "interior", "furniture", "exhibition"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Valentin Loellmann",
+    "website": "https://www.valentinloellmann.de/index.html",
+    "country": ["Netherlands"],
+    "city": ["Maastricht"],
+    "tags": ["furniture"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "studio KASCHKASCH",
+    "website": "https://kaschkasch.com",
+    "country": ["Germany"],
+    "city": ["Cologne"],
+    "tags": ["furniture", "art direction", "light"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Studio Alex Valder",
+    "website": "https://www.studioalexvalder.com",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["exhibition", "interior", "product"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Naoto Fukasawa",
+    "website": "https://naotofukasawa.com",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["product", "interior", "furniture"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Philippe Malouin",
+    "website": "https://philippemalouin.com",
+    "country": ["UK"],
+    "city": ["London"],
+    "tags": ["furniture", "light"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "Jenny Nordberg",
+    "website": "https://jennynordberg.se",
+    "country": ["Sweden"],
+    "city": ["Roestanga"],
+    "tags": ["art", "research", "furniture"],
+    "author": "Anouk"
+  },
+
+  {
+    "name": "h220430",
+    "website": "https://www.h220430.jp",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["art", "product", "architecture"],
     "author": "Moritz"
   }
 
