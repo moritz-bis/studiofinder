@@ -61,6 +61,10 @@ a:hover {
   line-height: 1.5;             /* mehr Zeilenhöhe */
 }
 
+.studio-name {
+  color: #45c473;
+  text-decoration: underline;
+}
 
 
 /* Tabelle */

@@ -31,7 +31,6 @@
         <th>name</th>
         <th>website</th>
         <th>city</th>
-        <th>country</th>
         <th>tags</th>
       </tr>
     </thead>
@@ -48,13 +47,10 @@
     studios.forEach(studio => {
       const row = document.createElement('tr');
       row.innerHTML = `
-        <td>${studio.name}</td>
+        <td><span class="studio-name">${studio.name}</span></td>
         <td><a href="${studio.website}" target="_blank">${studio.website}</a></td>
-        <td>${(studio.country || []).join(', ')}</td>
         <td>${(studio.city || []).join(', ')}</td>
-        <td>${(studio.tags || []).join(', ')}</td>
-        <td>${studio.author || ''}</td>
-        <td>${studio.favorite || ''}</td>
+        <td>${(studio.tags || []).map(tag => `<span class="tag">${tag}</span>`).join(' ')}</td>
       `;
       tbody.appendChild(row);
     });
