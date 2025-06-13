@@ -14,12 +14,11 @@
     
 body {
   font-family: 'Oxygen Mono', monospace;
-  margin-left: 4rem;
-  margin-right: 4rem;
+  margin: 4rem auto;
   margin-top: 2rem;
   background-color: #f9f9f9;
   color: #333;
-  align-items: center;
+  text-align: center;
 }
 
 h1 {
@@ -38,7 +37,7 @@ h2 {
 
 a {
   color: #45c473;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
@@ -47,13 +46,12 @@ a:hover {
 
 .tag {
   display: inline-block;
-  background-color: #45c473;       /* grüer Hintergrund */
-  color: #ffffff;                  /* weiße Schrift */
-  padding: 0.2em 0.5em;         /* etwas Abstand innen */
-  margin: 0.2em;                /* Abstand zu anderen Tags */
-  border-radius: 0.5em;         /* abgerundete Ecken */
-  font-size: 0.9em;             /* etwas kleiner (optional) */
-  line-height: 1.5;             /* mehr Zeilenhöhe */
+  background-color: #45c473;
+  color: #ffffff;
+  padding: 0.2em 0.5em;
+  border-radius: 0.5em;
+  font-size: 0.9em;
+  line-height: 1.2;
 }
 
 .studio-name {
@@ -65,25 +63,20 @@ a:hover {
 /* Tabelle */
 
 table {
-  width: 100%;
-  table-layout: fixed; /* wichtig für feste Spaltenbreiten */
   border-collapse: collapse;
+  margin: 20px auto;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  line-height: 2; 
 }
 
 th, td {
   padding: 0.5rem;
   text-align: center;
-  /* line-height: 1,2; */
+  max-width: 300px;
 }
 
 th {
   color: #333;
   text-decoration: underline;
 }
-
-/* Spaltenbreiten gezielt setzen */
-th:nth-child(1), td:nth-child(1) { width: 20%; }  /* Name */
-th:nth-child(2), td:nth-child(2) { width: 20%; }  /* City */
-th:nth-child(3), td:nth-child(3) { width: 60%; }  /* tags */

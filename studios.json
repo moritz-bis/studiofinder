@@ -4,7 +4,7 @@
     "website": "https://bureauborsche.com",
     "country": ["Germany"],
     "city": ["Munich"],
-    "tags": ["digital", "editorial", "graphic", "art-direction"],
+    "tags": ["graphic", "art-direction", "ui-ux", "editorial"],
     "author": "Moritz",
     "favorite": "Domenico"
   },
@@ -32,7 +32,7 @@
     "website": "https://schumacher-design.de",
     "country": ["Germany"],
     "city": ["Berlin", "Darmstadt"],
-    "tags": ["branding", "interaction"],
+    "tags": ["branding", "ui-ux"],
     "author": "Moritz"
   },
 
@@ -41,7 +41,7 @@
     "website": "https://theboysclub.berlin",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["graphic", "illustration"],
+    "tags": ["graphic"],
     "author": "Moritz"
   },
 
@@ -77,7 +77,7 @@
     "website": "https://deutscheundjapaner.com",
     "country": ["Germany"],
     "city": ["Berlin", "Mannheim"],
-    "tags": ["branding", "graphic", "art direction"],
+    "tags": ["branding", "graphic", "art-direction"],
     "author": "Moritz"
   },
 
@@ -95,7 +95,7 @@
     "website": "https://artcom.de",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["art", "communication", "research"],
+    "tags": ["art", "exhibition", "research"],
     "author": "Moritz"
   },
 
@@ -185,7 +185,7 @@
     "website": "https://make.studio",
     "country": ["Germany"],
     "city": ["Hamburg"],
-    "tags": ["branding", "UI/UX"],
+    "tags": ["branding", "ui-ux"],
     "author": "Moritz"
   },
 
@@ -221,7 +221,7 @@
     "website": "https://cnp.studio",
     "country": ["Germany"],
     "city": ["Munich"],
-    "tags": ["editorial", "art", "art direction", "UI/UX"],
+    "tags": ["editorial", "art", "art-direction", "ui-ux"],
     "author": "Moritz"
   },
 
@@ -302,7 +302,7 @@
     "website": "https://www.y-si.studio/de",
     "country": ["Germany"],
     "city": ["Munich"],
-    "tags": ["UI/UX", "sustainable"],
+    "tags": ["ui-ux", "sustainable"],
     "author": "Moritz"
   },
 
@@ -347,7 +347,7 @@
     "website": "https://www.onogrit.com",
     "country": ["Germany"],
     "city": ["Cologne"],
-    "tags": ["branding", "UI/UX", "editorial"],
+    "tags": ["branding", "ui-ux", "editorial"],
     "author": "Moritz"
   },
 
@@ -428,7 +428,7 @@
     "website": "https://www.pilotfish.eu",
     "country": ["Germany", "Portugal", "Netherlands", "Taiwan"],
     "city": ["Berlin", "Lisbon", "Amsterdam", "Teipei"],
-    "tags": ["product", "industry", "UI/UX"],
+    "tags": ["product", "industry", "ui-ux"],
     "author": "Moritz"
   },
 
@@ -455,8 +455,9 @@
     "website": "https://www.yrd.works",
     "country": ["Germany"],
     "city": ["Offenbach"],
-    "tags": ["public", "art"],
-    "author": "Moritz"
+    "tags": ["architecture", "art"],
+    "author": "Moritz",
+    "tags-plus": ["public"]
   },
 
   {
@@ -599,7 +600,7 @@
     "website": "https://www.designgroupitalia.com",
     "country": ["Italy"],
     "city": ["Milan"],
-    "tags": ["product", "UI/UX"],
+    "tags": ["product", "ui-ux"],
     "author": "Moritz"
   },
 
@@ -878,7 +879,7 @@
     "website": "https://gemmaroper.com/Homepage",
     "country": ["USA"],
     "city": ["San-Francisco"],
-    "tags": ["furniture", "UI/UX"],
+    "tags": ["furniture", "ui-ux"],
     "author": "Anouk"
   },
 
@@ -905,7 +906,7 @@
     "website": "https://kaschkasch.com",
     "country": ["Germany"],
     "city": ["Cologne"],
-    "tags": ["furniture", "art direction", "light"],
+    "tags": ["furniture", "art-direction", "light"],
     "author": "Anouk"
   },
 
@@ -1051,7 +1052,7 @@
     "website": "https://nasibov.me",
     "country": ["Germany"],
     "city": ["Berlin"],
-    "tags": ["branding", "UI/UX"],
+    "tags": ["branding", "ui-ux"],
     "author": "Moritz"
   },
 
@@ -1069,7 +1070,7 @@
     "website": "https://www.nuevo.tokyo",
     "country": ["Japan"],
     "city": ["Tokyo"],
-    "tags": ["branding", "UI/UX", "product"],
+    "tags": ["branding", "ui-ux", "product"],
     "author": "Moritz"
   },
 

@@ -13,17 +13,24 @@
   
   <h1>studio finder</h1>
 
-  <!-- <p id="stats"></p>
+  <!-- <p id="stats"></p> -->
 
-  <label for="countryFilter">country:</label>
-  <select id="countryFilter">
-    <option value="all">all countries</option>
-  </select>
+  <div id="filters">
+    <label for="countrySelect">country:</label>
+    <select id="countrySelect">
+      <option value="all">all countries</option>
+    </select>
 
-  <label for="cityFilter">city:</label>
-  <select id="cityFilter">
-    <option value="all">all cities</option>
-  </select> -->
+    <label for="citySelect">city:</label>
+    <select id="citySelect">
+      <option value="all">all cities</option>
+    </select>
+
+    <label for="tagSelect">tag:</label>
+    <select id="tagSelect">
+      <option value="all">all tags</option>
+    </select>
+  </div>
 
   <table id="studio-table">
     <thead>
@@ -39,10 +46,61 @@
 
   
 <script>
+  let allStudios = [];
+
   fetch('studios.json')
-  .then(response => response.json())
-  .then(studios => {
+    .then(response => response.json())
+    .then(studios => {
+      allStudios = studios;
+
+      // Einzigartige Länder, Städte, Tags extrahieren
+      const countries = new Set();
+      const cities = new Set();
+      const tags = new Set();
+
+      studios.forEach(studio => {
+        (studio.country || []).forEach(c => countries.add(c));
+        (studio.city || []).forEach(c => cities.add(c));
+        (studio.tags || []).forEach(t => tags.add(t));
+      });
+
+      // Dropdowns und Checkboxen füllen
+      const countrySelect = document.getElementById('countrySelect');
+      countries.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        countrySelect.appendChild(opt);
+      });
+
+      const citySelect = document.getElementById('citySelect');
+      cities.forEach(c => {
+        const opt = document.createElement('option');
+        opt.value = c;
+        opt.textContent = c;
+        citySelect.appendChild(opt);
+      });
+
+      const tagSelect = document.getElementById('tagSelect');
+      tags.forEach(t => {
+        const opt = document.createElement('option');
+        opt.value = t;
+        opt.textContent = t;
+        tagSelect.appendChild(opt);
+      });
+
+      // Filter-Events aktivieren
+      countrySelect.addEventListener('change', filterAndRender);
+      citySelect.addEventListener('change', filterAndRender);
+      tagSelect.addEventListener('change', filterAndRender);
+
+      // Initiales Rendering
+      renderTable(allStudios);
+    });
+
+  function renderTable(studios) {
     const tbody = document.querySelector('#studio-table tbody');
+    tbody.innerHTML = '';
     studios.forEach(studio => {
       const row = document.createElement('tr');
       row.innerHTML = `
@@ -52,111 +110,22 @@
       `;
       tbody.appendChild(row);
     });
-  });
+  }
 
-  // let studios = [];
+  function filterAndRender() {
+    const selectedCountry = document.getElementById('countrySelect').value;
+    const selectedCity = document.getElementById('citySelect').value;
+    const selectedTag = document.getElementById('tagSelect').value;
 
-  // const tbody = document.getElementById("studioTableBody");
-  // const countryFilter = document.getElementById("countryFilter");
-  // const cityFilter = document.getElementById("cityFilter");
+    const filtered = allStudios.filter(studio => {
+      const matchesCountry = selectedCountry === 'all' || (studio.country || []).includes(selectedCountry);
+      const matchesCity = selectedCity === 'all' || (studio.city || []).includes(selectedCity);
+      const matchesTags = selectedTag === 'all' || (studio.tags || []).includes(selectedTag);
+      return matchesCountry && matchesCity && matchesTags;
+    });
 
-  // async function loadStudios() {
-  //   try {
-  //     const response = await fetch("https://api.baserow.io/api/database/rows/table/561335/?user_field_names=true", {
-  //       headers: {
-  //         Authorization: "Token Wejzj9ZZuiuTFCkOEHciQZYNIAir1FTU"
-  //       }
-  //     });
-
-  //     const data = await response.json();
-  //     studios = data.results;
-
-  //     initDropdowns(studios);
-  //     renderStudios();
-  //   } catch (error) {
-  //     console.error("Fehler beim Laden der Studiendaten:", error);
-  //   }
-  // }
-
-  // function initDropdowns(studios) {
-  //   const allCountries = new Set();
-  //   const allCities = new Set();
-
-  //   studios.forEach(studio => {
-  //     if (Array.isArray(studio.country)) {
-  //       studio.country.forEach(c => allCountries.add(c.value || c));
-  //     }
-  //     if (Array.isArray(studio.city)) {
-  //       studio.city.forEach(c => allCities.add(c.value || c));
-  //     }
-  //   });
-
-  //   for (const country of Array.from(allCountries).sort()) {
-  //     const opt = document.createElement("option");
-  //     opt.value = country;
-  //     opt.textContent = country;
-  //     countryFilter.appendChild(opt);
-  //   }
-
-  //   for (const city of Array.from(allCities).sort()) {
-  //     const opt = document.createElement("option");
-  //     opt.value = city;
-  //     opt.textContent = city;
-  //     cityFilter.appendChild(opt);
-  //   }
-  // }
-
-  // function updateStats(visibleStudios) {
-  //   const statsElement = document.getElementById("stats");
-  //   const numStudios = visibleStudios.length;
-  //   const citySet = new Set();
-
-  //   visibleStudios.forEach(studio => {
-  //     (studio.city || []).forEach(city => {
-  //       citySet.add(city.value || city);
-  //     });
-  //   });
-
-  //   statsElement.textContent = `${numStudios} studios in ${citySet.size} cities`;
-  // }
-
-  // function renderStudios() {
-  //   const selectedCountry = countryFilter.value;
-  //   const selectedCity = cityFilter.value;
-
-  //   const filtered = studios.filter(studio => {
-  //     const studioCountries = (studio.country || []).map(c => c.value || c);
-  //     const studioCities = (studio.city || []).map(c => c.value || c);
-
-  //     const countryMatch = selectedCountry === "all" || studioCountries.includes(selectedCountry);
-  //     const cityMatch = selectedCity === "all" || studioCities.includes(selectedCity);
-
-  //     return countryMatch && cityMatch;
-  //   });
-
-  //   tbody.innerHTML = "";
-  //   updateStats(filtered);
-
-  //   filtered.forEach(studio => {
-  //     const row = document.createElement("tr");
-  //     const websiteLink = studio.website ? `<a href="${studio.website}" target="_blank">${studio.website}</a>` : "";
-
-  //     row.innerHTML = `
-  //       <td>${studio.name || ""}</td>
-  //       <td>${websiteLink}</td>
-  //       <td>${(studio.city || []).map(c => c.value || c).join(', ')}</td>
-  //       <td>${(studio.country || []).map(c => c.value || c).join(', ')}</td>
-  //       <td>${(studio.tags || []).map(tag => `<span class="tag">${tag.value || tag}</span>`).join(' ')}</td>
-  //     `;
-
-  //     tbody.appendChild(row);
-  //   });
-  // }
-
-  // countryFilter.addEventListener("change", renderStudios);
-  // cityFilter.addEventListener("change", renderStudios);
-
-  // loadStudios();
+    renderTable(filtered);
+  }
 </script>
 
 </body>
