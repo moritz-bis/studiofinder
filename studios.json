@@ -1044,6 +1044,42 @@
     "city": ["Tokyo"],
     "tags": ["product", "furniture", "architecture", "graphic"],
     "author": "Moritz"
+  },
+
+  {
+    "name": "Ramin Nasibov",
+    "website": "https://nasibov.me",
+    "country": ["Germany"],
+    "city": ["Berlin"],
+    "tags": ["branding", "UI/UX"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "art recherche industrie",
+    "website": "https://www.a-r-i.ch",
+    "country": ["France"],
+    "city": ["Paris"],
+    "tags": ["architecture", "editorial", "graphic", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Nuevo.Tokyo",
+    "website": "https://www.nuevo.tokyo",
+    "country": ["Japan"],
+    "city": ["Tokyo"],
+    "tags": ["branding", "UI/UX", "product"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Leftloft",
+    "website": "https://www.leftloft.com",
+    "country": ["Italy"],
+    "city": ["Milan"],
+    "tags": ["branding", "exhibition", "graphic"],
+    "author": "Moritz"
   }
 
 ]
