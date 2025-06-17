@@ -80,3 +80,29 @@ th {
   color: #333;
   text-decoration: underline;
 }
+
+.dieter-main {
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  max-width: 600px;
+  margin-top: 500px;
+  margin-bottom: 50px;
+  object-fit: contain;
+}
+
+.dieter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  margin-bottom: 50px;
+}
+
+/* SVG selbst: begrenzte Breite + responsive */
+.dieter-svg {
+  max-width: 600px;
+  width: 80vw;              /* 80% der Viewport-Breite */
+  height: auto;
+  display: block;
+}
