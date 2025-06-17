@@ -82,16 +82,6 @@ th {
   text-decoration: underline;
 }
 
-.dieter-main {
-  align-items: center;
-  justify-content: center;
-  width: 70%;
-  max-width: 600px;
-  margin-top: 500px;
-  margin-bottom: 50px;
-  object-fit: contain;
-}
-
 .dieter {
   display: flex;
   justify-content: center;
@@ -100,10 +90,9 @@ th {
   margin-bottom: 50px;
 }
 
-/* SVG selbst: begrenzte Breite + responsive */
 .dieter-svg {
   max-width: 600px;
-  width: 80vw;              /* 80% der Viewport-Breite */
+  width: 80vw;
   height: auto;
   display: block;
 }
