@@ -1081,6 +1081,24 @@
     "city": ["Milan"],
     "tags": ["branding", "exhibition", "graphic"],
     "author": "Moritz"
+  },
+
+  {
+    "name": "BLOND",
+    "website": "https://blond.cc",
+    "country": ["UK"],
+    "city": ["London"],
+    "tags": ["product", "branding", "interior"],
+    "author": "Moritz"
+  },
+
+  {
+    "name": "Atelier Oï",
+    "website": "https://www.atelier-oi.ch",
+    "country": ["Switzerland"],
+    "city": ["La Neuveville"],
+    "tags": ["product", "furniture", "exhibition", "interior"],
+    "author": "Moritz"
   }
 
 ]
